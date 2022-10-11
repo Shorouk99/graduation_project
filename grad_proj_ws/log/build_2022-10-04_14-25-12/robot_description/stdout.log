@@ -1,0 +1,33 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/shorouk/grad_proj_ws/build/robot_description
+-- Install configuration: ""
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/config
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/launch
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/launch/display.launch.py
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/maps
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/meshes
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/models
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/models/urdf_description.urdf
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/params
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/rviz
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/rviz/urdf_config.rviz
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/src
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/worlds
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/environment/path.sh
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/environment/path.dsv
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/local_setup.bash
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/local_setup.sh
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/local_setup.zsh
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/local_setup.dsv
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/package.dsv
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/ament_index/resource_index/packages/robot_description
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_description/share/robot_description/package.xml

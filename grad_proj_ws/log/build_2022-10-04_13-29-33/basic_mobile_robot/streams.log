@@ -1,0 +1,60 @@
+[0.053s] Invoking command in '/home/shorouk/grad_proj_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shorouk/ros2_ws/install/py_srvcli:/home/shorouk/ros2_ws/install/py_pubsub:/home/shorouk/ros2_ws/install/py_launch_example:/home/shorouk/ros2_ws/install/my_package:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_service:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_publisher:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_client:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_server:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_client:/home/shorouk/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/shorouk/grad_proj_ws/src/basic_mobile_robot -DCMAKE_INSTALL_PREFIX=/home/shorouk/grad_proj_ws/install/basic_mobile_robot
+[1.440s] -- The C compiler identification is GNU 9.4.0
+[2.701s] -- The CXX compiler identification is GNU 9.4.0
+[2.812s] -- Check for working C compiler: /usr/bin/cc
+[2.984s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.993s] -- Detecting C compiler ABI info
+[3.161s] -- Detecting C compiler ABI info - done
+[3.184s] -- Detecting C compile features
+[3.191s] -- Detecting C compile features - done
+[3.252s] -- Check for working CXX compiler: /usr/bin/c++
+[3.408s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.410s] -- Detecting CXX compiler ABI info
+[3.570s] -- Detecting CXX compiler ABI info - done
+[3.594s] -- Detecting CXX compile features
+[3.595s] -- Detecting CXX compile features - done
+[3.747s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.936s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.937s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.938s] -- Configuring done
+[4.941s] -- Generating done
+[4.943s] -- Build files have been written to: /home/shorouk/grad_proj_ws/build/basic_mobile_robot
+[4.949s] Invoked command in '/home/shorouk/grad_proj_ws/build/basic_mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shorouk/ros2_ws/install/py_srvcli:/home/shorouk/ros2_ws/install/py_pubsub:/home/shorouk/ros2_ws/install/py_launch_example:/home/shorouk/ros2_ws/install/my_package:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_service:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_publisher:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_client:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_server:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_client:/home/shorouk/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/shorouk/grad_proj_ws/src/basic_mobile_robot -DCMAKE_INSTALL_PREFIX=/home/shorouk/grad_proj_ws/install/basic_mobile_robot
+[4.953s] Invoking command in '/home/shorouk/grad_proj_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shorouk/ros2_ws/install/py_srvcli:/home/shorouk/ros2_ws/install/py_pubsub:/home/shorouk/ros2_ws/install/py_launch_example:/home/shorouk/ros2_ws/install/my_package:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_service:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_publisher:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_client:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_server:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_client:/home/shorouk/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/grad_proj_ws/build/basic_mobile_robot -- -j4 -l4
+[5.030s] Invoked command in '/home/shorouk/grad_proj_ws/build/basic_mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shorouk/ros2_ws/install/py_srvcli:/home/shorouk/ros2_ws/install/py_pubsub:/home/shorouk/ros2_ws/install/py_launch_example:/home/shorouk/ros2_ws/install/my_package:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_service:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_publisher:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_client:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_server:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_client:/home/shorouk/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/grad_proj_ws/build/basic_mobile_robot -- -j4 -l4
+[5.077s] Invoking command in '/home/shorouk/grad_proj_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shorouk/ros2_ws/install/py_srvcli:/home/shorouk/ros2_ws/install/py_pubsub:/home/shorouk/ros2_ws/install/py_launch_example:/home/shorouk/ros2_ws/install/my_package:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_service:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_publisher:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_client:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_server:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_client:/home/shorouk/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/grad_proj_ws/build/basic_mobile_robot
+[5.097s] -- Install configuration: ""
+[5.097s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/config
+[5.098s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch
+[5.098s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v1.launch.py
+[5.098s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/maps
+[5.098s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes
+[5.099s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/arm_base.stl
+[5.099s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wrist.stl
+[5.100s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/elbow.stl
+[5.100s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/robot_base.stl
+[5.101s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wheel.stl
+[5.101s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/bicep.stl
+[5.102s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/models
+[5.102s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v1.urdf
+[5.102s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/params
+[5.103s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz
+[5.103s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz/urdf_config.rviz
+[5.103s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/src
+[5.103s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds
+[5.104s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/ament_index/resource_index/package_run_dependencies/basic_mobile_robot
+[5.104s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/ament_index/resource_index/parent_prefix_path/basic_mobile_robot
+[5.104s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.sh
+[5.105s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.dsv
+[5.105s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.sh
+[5.106s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.dsv
+[5.106s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.bash
+[5.106s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.sh
+[5.107s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.zsh
+[5.107s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.dsv
+[5.107s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/package.dsv
+[5.108s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/ament_index/resource_index/packages/basic_mobile_robot
+[5.108s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig.cmake
+[5.109s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig-version.cmake
+[5.109s] -- Installing: /home/shorouk/grad_proj_ws/install/basic_mobile_robot/share/basic_mobile_robot/package.xml
+[5.117s] Invoked command in '/home/shorouk/grad_proj_ws/build/basic_mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shorouk/ros2_ws/install/py_srvcli:/home/shorouk/ros2_ws/install/py_pubsub:/home/shorouk/ros2_ws/install/py_launch_example:/home/shorouk/ros2_ws/install/my_package:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_service:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_publisher:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_client:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_server:/home/shorouk/ros2_ws/install/examples_rclpy_minimal_action_client:/home/shorouk/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/grad_proj_ws/build/basic_mobile_robot
