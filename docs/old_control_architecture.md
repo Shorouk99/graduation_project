@@ -3,7 +3,7 @@ In this document, the control architecture used by the previous development team
 
 
 ## Overview
-![Old Control Architecture's Overview] (/docs/old_control_arch_brief.png) 
+![Old Control Architecture's Overview] (old_control_arch_brief.png) 
 As shown in the above diagram, the diffrential_drive package acts as middleware between the high-level control represented by the navigation stack (although other packages are included, only nav_stack is mentioned for brevity), and low-level control represented by the node on the Arduino
 
 The diffrential_drive package takes in the velocity setpoint (/cmd_vel) from the navigation stack, as well as the encoder ticks (/lwheel and /rwheel) from the Arduino. It uses them to perform the PID calculations and output the PWM commands (/lmotor_pwr ans /rmotor_pwr) to the motors through the Arduino.
@@ -11,7 +11,7 @@ The diffrential_drive package takes in the velocity setpoint (/cmd_vel) from the
 
 ## Detailed Explanantion
 The below diagram describes this process in greater detail:
-![Old Control Architecture's Detialed Description] (/docs/old_control_arch_detailed.png) 
+![Old Control Architecture's Detialed Description] (old_control_arch_detailed.png) 
 
 - The Arduino publishes the encoder ticks to the topics /lwheel and /rwheel
 - Nav_stack publishes the linear and angular velocity setpoint of the robot (as twist msg) to the topic /cmd_vel
