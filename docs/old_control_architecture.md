@@ -11,6 +11,7 @@ The diffrential_drive package takes in the velocity setpoint (/cmd_vel) from the
 
 ## Detailed Explanantion
 The below diagram describes this process in greater detail:
+
 <img src="old_control_arch_detailed.png" alt="Architecture's Detialed Description" style="height: 672px; width:456px;"/> 
 
 - The Arduino publishes the encoder ticks to the topics /lwheel and /rwheel
