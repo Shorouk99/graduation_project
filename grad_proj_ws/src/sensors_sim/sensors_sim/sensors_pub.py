@@ -41,12 +41,7 @@ class MinimalPublisher(Node):
         self.rwheel_pub.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
         # self.i = self.i+1
-
-        # publishing simulated cmd_vel data
-        v_msg = Twist(linear=Vector3(x=0.0, y=0.0, z=0.0), angular=Vector3(x=0.0, y=0.0, z=0.0))
-        self.vel_pub.publish(v_msg)
-        self.get_logger().info('Publishing: "%s"' % v_msg)
-
+        
         # publishing simulated imu data
         imu_msg = Imu()
         imu_msg.header = Header(stamp = self.get_clock().now().to_msg(), frame_id = 'base_footprint')

@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = sensors_sim.sensors_pub:main',
+            'sensors_talker = sensors_sim.sensors_pub:main',
+            'cmd_vel_talker = sensors_sim.cmd_vel_pub:main',
         ],
     },
 )
