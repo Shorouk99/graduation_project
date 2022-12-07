@@ -24,10 +24,9 @@ class MinimalPublisher(Node):
         super().__init__('minimal_publisher')
         self.lwheel_pub = self.create_publisher(Int16, 'lwheel', 10)
         self.rwheel_pub = self.create_publisher(Int16, 'rwheel', 10)
-#         self.vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
         self.imu_pub = self.create_publisher(Imu, 'imu/data', 10)
         self.laser_scan_pub = self.create_publisher(LaserScan, '/scan', 10)
-        timer_period = 0.1  # seconds
+        timer_period = 0.03  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         # self.i = 0
 
@@ -39,27 +38,29 @@ class MinimalPublisher(Node):
         msg.data = 0
         self.lwheel_pub.publish(msg)
         self.rwheel_pub.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+        # self.get_logger().info('Publishing: "%s"' % msg.data)
         # self.i = self.i+1
         
         # publishing simulated imu data
         imu_msg = Imu()
-        imu_msg.header = Header(stamp = self.get_clock().now().to_msg(), frame_id = 'base_footprint')
+        imu_msg.header = Header(stamp = self.get_clock().now().to_msg(), frame_id = 'imu_link')
         orientation = Quaternion()
-        orientation.x = 0.0
-        orientation.y = 0.0
-        orientation.z = 0.0
-        orientation.w = 0.0
+        orientation.x = 0.0000122
+        orientation.y = 0.00001
+        orientation.z = 0.003
+        orientation.w = 0.99
         orientation_covariance = np.full((9), 0.0)
         orientation_covariance = orientation_covariance.tolist()
 
-        imu_ang_vel = Vector3(x=0.0, y=0.0, z=0.0)
-        angular_velocity_covariance = np.full((9), 0.0)
-        angular_velocity_covariance = angular_velocity_covariance.tolist()
+        imu_ang_vel = Vector3(x=0.0018, y=0.0014, z=0.00017)
+        # angular_velocity_covariance = np.full((9), 0.0)
+        angular_velocity_covariance = [4.0e-08, 0.0, 0.0, 0.0, 4.0e-08, 0.0, 0.0, 0.0, 4.0e-8]
+        # angular_velocity_covariance = angular_velocity_covariance.tolist()
 
         imu_lin_acc = Vector3(x=0.02712944195552014, y=-0.00881083247811993, z=10.231021001446841)
-        linear_acceleration_covariance = np.full((9), 0.0)
-        linear_acceleration_covariance = linear_acceleration_covariance.tolist()
+        # linear_acceleration_covariance = np.full((9), 0.0)
+        # linear_acceleration_covariance = linear_acceleration_covariance.tolist()
+        linear_acceleration_covariance = [0.0029, 0.0, 0.0, 0.0, 0.0029, 0.0, 0.0, 0.0, 0.0029]
 
         imu_msg.orientation = orientation
         imu_msg.orientation_covariance = orientation_covariance
@@ -82,7 +83,8 @@ class MinimalPublisher(Node):
         laser_scan_msg.range_max = 3.5
         ranges = np.full((360), np.inf)
         ranges = ranges.tolist()
-        intensities = []
+        intensities = np.full((360), 47.0)
+        intensities = intensities.tolist()
         laser_scan_msg.ranges = ranges 
         laser_scan_msg.intensities = intensities
 
