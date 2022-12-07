@@ -79,7 +79,7 @@
 
                                     <!-- ...........imu ........... -->
 
-  <node pkg="mpu6050_serial_to_imu" type="mpu6050_serial_to_imu_node" name="mpu6050_serial_to_imu_node" required="true">
+ <node pkg="mpu6050_serial_to_imu" type="mpu6050_serial_to_imu_node" name="mpu6050_serial_to_imu_node" required="true">
     <param name="port" value="/dev/ttyACM0"/>
 		<param name="tf_parent_frame_id" value="base_link"/>
 		<param name="tf_frame_id" value="imu_link"/>

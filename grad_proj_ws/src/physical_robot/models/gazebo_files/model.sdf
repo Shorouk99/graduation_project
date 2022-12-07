@@ -106,14 +106,14 @@
             </z>
           </linear_acceleration>
         </imu>
-        <plugin name="basic_mobile_bot_imu" filename="libgazebo_ros_imu_sensor.so">
+       <!--<plugin name="basic_mobile_bot_imu" filename="libgazebo_ros_imu_sensor.so">
           <initial_orientation_as_reference>false</initial_orientation_as_reference>
           <frame_name>imu_link</frame_name>
           <ros>
             <namespace>/imu</namespace>
             <remapping>~/out:=data</remapping>
           </ros>
-        </plugin>
+        </plugin>-->
       </sensor>
     </link>
 

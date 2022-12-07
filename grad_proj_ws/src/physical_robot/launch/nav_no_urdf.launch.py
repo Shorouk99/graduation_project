@@ -30,7 +30,7 @@ def generate_launch_description():
 
   nav2_dir = FindPackageShare(package='nav2_bringup').find('nav2_bringup') 
   nav2_launch_dir = os.path.join(nav2_dir, 'launch') 
-  static_map_path = os.path.join(pkg_share, 'maps', 'new_main_map2.yaml')
+  static_map_path = os.path.join(pkg_share, 'maps', 'hospital_ws2.yaml')
   nav2_params_path = os.path.join(pkg_share, 'params', 'nav2_params.yaml')
   nav2_bt_path = FindPackageShare(package='nav2_bt_navigator').find('nav2_bt_navigator')
   behavior_tree_xml_path = os.path.join(nav2_bt_path, 'behavior_trees', 'navigate_w_replanning_and_recovery.xml')
@@ -146,19 +146,19 @@ def generate_launch_description():
   footprint_static_transform = Node (
     package='tf2_ros',
     executable='static_transform_publisher',
-    arguments= ['0', '0', '0.09', '0', '0', '0', 'base_footprint', 'base_link'])
+    arguments= ['0', '0', '-0.175', '0', '0', '0', 'base_footprint', 'base_link'])
 
   # Broadcast lidar static transform
   lidar_static_transform = Node (
     package='tf2_ros',
     executable='static_transform_publisher',
-    arguments= ['0.06', '0', '0.08', '0', '0', '0', 'base_link', 'lidar_link'])
+    arguments= ['0.045', '-0.145', '0.195', '1.56', '0', '0', 'base_link', 'lidar_link'])
 
   # Broadcast IMU static transform
   imu_static_transform = Node (
     package='tf2_ros',
     executable='static_transform_publisher',
-    arguments= ['0', '0.06', '0.02', '0', '0', '0', 'base_link', 'imu_link'])
+    arguments= ['0', '0', '-0.135', '0', '0', '0', 'base_link', 'imu_link'])
 
   # Start lidar node
   start_lidar_cmd = Node (
