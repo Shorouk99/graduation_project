@@ -24,9 +24,9 @@ class MinimalPublisher(Node):
         super().__init__('minimal_publisher')
         self.lwheel_pub = self.create_publisher(Int16, 'lwheel', 10)
         self.rwheel_pub = self.create_publisher(Int16, 'rwheel', 10)
-        self.vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
-        # self.imu_pub = self.create_publisher(Imu, 'imu/data', 10)
-        # self.laser_scan_pub = self.create_publisher(LaserScan, '/scan', 10)
+#         self.vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.imu_pub = self.create_publisher(Imu, 'imu/data', 10)
+        self.laser_scan_pub = self.create_publisher(LaserScan, '/scan', 10)
         timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         # self.i = 0
@@ -67,7 +67,7 @@ class MinimalPublisher(Node):
         imu_msg.angular_velocity_covariance = angular_velocity_covariance
         imu_msg.linear_acceleration = imu_lin_acc
         imu_msg.linear_acceleration_covariance = linear_acceleration_covariance
-        # self.imu_pub.publish(imu_msg)
+        self.imu_pub.publish(imu_msg)
         # self.get_logger().info('Publishing: "%s"' % imu_msg.header)
 
         # publishing simulated laser scan
@@ -86,7 +86,7 @@ class MinimalPublisher(Node):
         laser_scan_msg.ranges = ranges 
         laser_scan_msg.intensities = intensities
 
-        # self.laser_scan_pub.publish(laser_scan_msg)
+        self.laser_scan_pub.publish(laser_scan_msg)
         # self.get_logger().info('Publishing: "%s"' % laser_scan_msg.header)
 
 
