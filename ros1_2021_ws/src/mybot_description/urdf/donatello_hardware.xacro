@@ -1,0 +1,166 @@
+<?xml version='1.0'?>
+
+<robot name="myrobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!--    mass and inertia-->
+  <xacro:property name="PI_2" value="1.57079632679" />
+  <xacro:property name="chassis_m" value="10" />
+  <xacro:property name="right_wheel_m" value="1.5" />
+  <xacro:property name="left_wheel_m" value="1.5" />
+
+<!--    dimensions-->
+  <xacro:property name="wheels_from_ground" value="0.0432" />  <!--it was 0.0432 but i made it 0.043209-->
+  <xacro:property name="wheels_d" value="0.1244" />
+  <xacro:property name="wheels_w" value="0.05" />
+	<xacro:property name="wheels_center_from_base" value="${(wheels_d/2)-wheels_from_ground}" />
+  <xacro:property name="dist_bet_wheels" value="0.357109" />
+
+<!--   imu data-->
+  <xacro:property name="height_from_ground" value="0.111" />
+	<xacro:property name="distance_x" value="0.0" />
+
+<!--		camera parameters-->
+  <xacro:property name="cameraSize" value="0.05"/>
+  <xacro:property name="cameraMass" value="0.1"/>
+
+<!--    laser data-->
+  <xacro:property name="laser_angular_res" value="${1}" />
+  <xacro:property name="laser_angle" value="${(270/180)*(PI_2*2)}" />
+  <xacro:property name="laser_min_range" value="${0.1}" />
+  <xacro:property name="laser_max_range" value="${10}" />
+  <xacro:property name="laser_linear_res" value="${0.001}" />
+	<xacro:property name="laser_r" value="0.03" />
+  <xacro:property name="laser_l" value="0.05" />
+
+<!--		include other xacro files-->
+	<!--<xacro:include filename="$(find mybot_description)/urdf/mybot.gazebo" />-->
+  <xacro:include filename="$(find mybot_description)/urdf/materials.xacro" />
+
+<!--Define links-->
+	<link name="base_footprint"/>
+
+  <link name='base_link'>
+    <inertial>
+      <mass value="${chassis_m}"/>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <inertia ixx="0.032" ixy="0" ixz="0" iyy="0.068" iyz="0" izz="0.085"/>
+    </inertial>
+    <collision name='collision'>
+      <geometry>
+        <mesh
+          filename="package://mybot_description/meshes/Body.STL" />
+      </geometry>
+    </collision>
+    <visual name='base_link_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <mesh
+          filename="package://mybot_description/meshes/Body.STL" />
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="left_wheel">
+    <collision name="left_wheel_collision">
+      <origin xyz="0 0 0 " rpy="${PI_2} ${PI_2} 0"/>
+      <geometry>
+     		<cylinder radius="${wheels_d/2}" length="${wheels_w}"/>
+      </geometry>
+    </collision>
+    <visual name="left_wheel_visual">
+      <origin xyz="0 0 0" rpy="${PI_2} ${PI_2} 0"/>
+      <geometry>
+        <cylinder radius="${wheels_d/2}" length="${wheels_w}"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="${PI_2} ${PI_2} 0"/>
+      <mass value="${left_wheel_m}"/>
+      <inertia ixx="0.0058" ixy="0.0" ixz="0.0" iyy="0.0058" iyz="0.0" izz="0.0058"/>
+    </inertial>
+  </link>
+
+  <link name="right_wheel">
+    <collision name="right_wheel_collision">
+      <origin xyz="0 0 0" rpy="${PI_2} ${PI_2} 0"/>
+      <geometry>
+        <cylinder radius="${wheels_d/2}" length="${wheels_w}"/>
+      </geometry>
+    </collision>
+    <visual name="right_wheel_visual">
+      <origin xyz="0 0 0" rpy="${PI_2} ${PI_2} 0"/>
+      <geometry>
+        <cylinder radius="${wheels_d/2}" length="${wheels_w}"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="${PI_2} ${PI_2} 0"/>
+      <mass value="${right_wheel_m}"/>
+      <inertia ixx="0.0058" ixy="0.0" ixz="0.0" iyy="0.0058" iyz="0.0" izz="0.0058"/>
+    </inertial>
+  </link>
+
+	<link name="imu_link">
+	 <visual>
+		 <geometry>
+		   <box size="0.01 0.02 0.0015"/>
+		 </geometry>
+	 </visual>
+	</link>
+
+<!--Define Joints-->
+  <joint name="base_footprint_base_link" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 ${wheels_from_ground}"/>
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+  </joint>
+
+  <joint name="base_link_imu" type="fixed">
+    <origin rpy="0 0 0" xyz="${distance_x} 0 ${height_from_ground}"/>
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+  </joint>
+	
+  <joint type="continuous" name="left_wheel_hinge">
+    <origin xyz="0 ${dist_bet_wheels/2} ${wheels_center_from_base}" rpy="0 0 0"/>
+    <child link="left_wheel"/>
+    <parent link="base_link"/>
+    <axis xyz="0 1 0" rpy="0 0 0"/>
+    <limit effort="100" velocity="100"/>
+    <joint_properties damping="0.0" friction="0.0"/>
+  </joint>
+
+  <joint type="continuous" name="right_wheel_hinge">
+    <origin xyz="0 -${dist_bet_wheels/2} ${wheels_center_from_base}" rpy="0 0 0"/>
+    <child link="right_wheel"/>
+    <parent link="base_link"/>
+    <axis xyz="0 1 0" rpy="0 0 0"/>
+    <limit effort="100" velocity="100"/>
+    <joint_properties damping="0.0" friction="0.0"/>
+  </joint>
+
+	<transmission name="left_wheel_transmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="left_wheel_hinge">
+            <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
+        </joint>
+        <actuator name="left_wheel_actuator">
+            <mechanicalReduction>1</mechanicalReduction>
+            <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+        </actuator>
+    </transmission>
+
+	<transmission name="right_wheel_transmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="right_wheel_hinge">
+            <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
+        </joint>
+        <actuator name="right_wheel_actuator">
+            <mechanicalReduction>1</mechanicalReduction>
+            <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+        </actuator>
+    </transmission>
+
+<!--Kinect frames are published from freenect package-->
+
+</robot>
