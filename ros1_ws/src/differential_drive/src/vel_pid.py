@@ -20,7 +20,7 @@ e_wr_prev = 0           # Derivative term
 e_wr_sum = 0            # Intergal Term
 action_r = 0            # Control action on right motor
 # PID Gains for right motor
-Kp_r = 105.0	#155.0
+Kp_r = 205.0	#105.0 #155.0
 Ki_r = 7.0		#9.0
 Kd_r = 0.1		#0.01
 
@@ -35,7 +35,7 @@ e_wl_prev = 0
 e_wl_sum = 0
 action_l = 0
 # PID Gains for left motor
-Kp_l = 100.0	#150.0
+Kp_l = 200.0	#100.0 #150.0
 Ki_l = 7.0		#9.0	
 Kd_l = 0.1 	#0.01
 
@@ -119,7 +119,7 @@ if __name__ == '__main__':
 	rospy.Subscriber('rwheel_vtarget', Float64, wr_targ_callback)
 	rospy.Subscriber('lwheel_vtarget', Float64, wl_targ_callback)
 
-	rate = rospy.Rate(50)
+	rate = rospy.Rate(10)
 
 	while not rospy.is_shutdown():
 		PID()

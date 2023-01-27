@@ -17,17 +17,16 @@
  
  <rosparam param="ticks_meter">2920</rosparam>
 
-  <!-- Subscribe: /right_ticks, /left_ticks, /initial_2d -->
-  <!-- Publish: /odom_data_euler, /odom_data_quat -->
-  <node pkg="localization_data_pub" type="ekf_odom_pub" name="ekf_odom_pub">
-	  <remap from="right_ticks" to="rwheel" />
-	  <remap from="left_ticks" to="lwheel" />
-	  <remap from="odom_data_quat" to="wheel/odometry" />
-  </node> 
+  	<node pkg="differential_drive" type="diff_tf.py" name="diff_tf">
+		<rosparam param="rate">10.0</rosparam>
+		<rosparam param="base_width">0.29</rosparam>
+		<rosparam param="ticks_meter">2920</rosparam>
+		<remap from="odom" to="/wheel/odometry"/>
+	</node>
 
 	<node pkg="differential_drive" type="twist_to_motors.py" name="twist_to_motors" output="screen">
 		<rosparam param="base_width">0.29</rosparam>
-		<rosparam param="rate">50</rosparam>
+		<rosparam param="rate">10.0</rosparam>
     <remap from="twist" to="/cmd_vel"/>
 	</node>
 
@@ -44,7 +43,7 @@
 		 <rosparam param="Kd">0.5</rosparam> <!--0.1 or 0.5-->
 		 <rosparam param="out_min">-255</rosparam>
 		 <rosparam param="out_max">255</rosparam>
-		 <rosparam param="rate">7.0</rosparam>
+		 <rosparam param="rate">31.0</rosparam>
 		 <rosparam param="timeout_ticks">4</rosparam>
 		 <rosparam param="rolling_pts">5</rosparam>
 	</node>
@@ -59,7 +58,7 @@
 		 <rosparam param="Kd">0.5</rosparam>
 		 <rosparam param="out_min">-255</rosparam>
 		 <rosparam param="out_max">255</rosparam>
-		 <rosparam param="rate">7.0</rosparam>
+		 <rosparam param="rate">10.0</rosparam>
 		 <rosparam param="timeout_ticks">4</rosparam>
 		 <rosparam param="rolling_pts">5</rosparam>
 	</node>
@@ -70,8 +69,8 @@
 
   <!-- Subscribe: /initialpose, /move_base_simple/goal -->
   <!-- Publish: /initial_2d, /goal_2d --> 
-  <node pkg="localization_data_pub" type="rviz_click_to_2d" name="rviz_click_to_2d">
-  </node>
+<!--   <node pkg="localization_data_pub" type="rviz_click_to_2d" name="rviz_click_to_2d">
+  </node> -->
 
   <!--<node pkg="simple_navigation_goals" type="simple_navigation_goals" name="simple_navigation_goals">
   </node>-->
@@ -89,6 +88,17 @@
 		<param name="angular_velocity_stddev" value="2.5e-05"/>
 		<param name="orientation_stddev" value="0.0"/>
   </node>
+
+                                    <!-- ...........LiDAR ........... -->
+
+ <node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
+	  <param name="serial_port"         type="string" value="/dev/ttyUSB1"/>
+	  <param name="serial_baudrate"     type="int"    value="115200"/><!--A1/A2 -->
+	  <!--param name="serial_baudrate"     type="int"    value="256000"--><!--A3 -->
+	  <param name="frame_id"            type="string" value="lidar_link"/>
+	  <param name="inverted"            type="bool"   value="false"/>
+	  <param name="angle_compensate"    type="bool"   value="true"/>
+ </node>
 
 
 	
