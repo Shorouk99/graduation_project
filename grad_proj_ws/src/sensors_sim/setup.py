@@ -22,6 +22,9 @@ setup(
         'console_scripts': [
             'sensors_talker = sensors_sim.sensors_pub:main',
             'cmd_vel_talker = sensors_sim.cmd_vel_pub:main',
+            'odom_pub = sensors_sim.odom:main',
+            'ypr_pub = sensors_sim.quat_to_euler:main',
+            'scan_pub = sensors_sim.scan_sub:main',
         ],
     },
 )

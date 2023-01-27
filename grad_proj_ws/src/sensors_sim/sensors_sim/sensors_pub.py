@@ -28,27 +28,27 @@ class MinimalPublisher(Node):
         self.laser_scan_pub = self.create_publisher(LaserScan, '/scan', 10)
         timer_period = 0.03  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        # self.i = 0
+        self.i = 0
 
 
     def timer_callback(self):
 
         # publishing simulated encoder ticks
         msg = Int16()
-        msg.data = 0
+        msg.data = self.i
         self.lwheel_pub.publish(msg)
         self.rwheel_pub.publish(msg)
-        # self.get_logger().info('Publishing: "%s"' % msg.data)
-        # self.i = self.i+1
+        self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.i = self.i+1
         
         # publishing simulated imu data
         imu_msg = Imu()
         imu_msg.header = Header(stamp = self.get_clock().now().to_msg(), frame_id = 'imu_link')
         orientation = Quaternion()
-        orientation.x = 0.0000122
-        orientation.y = 0.00001
-        orientation.z = 0.003
-        orientation.w = 0.99
+        orientation.x = 0.0
+        orientation.y = 0.0
+        orientation.z = 0.7072
+        orientation.w = 0.7072
         orientation_covariance = np.full((9), 0.0)
         orientation_covariance = orientation_covariance.tolist()
 

@@ -22,12 +22,12 @@ class MinimalPublisher(Node):
     def timer_callback(self):
 
         # publishing simulated cmd_vel data
-        if self.i < 100:
+        if self.i < 50:
             v_msg = Twist(linear=Vector3(x=0.5, y=0.0, z=0.0), angular=Vector3(x=0.0, y=0.0, z=0.0))
             self.vel_pub.publish(v_msg)
             self.get_logger().info('Publishing: "%s"' % v_msg)
 
-        elif self.i > 100:
+        elif self.i > 50:
             v_msg = Twist(linear=Vector3(x=0.0, y=0.0, z=0.0), angular=Vector3(x=0.0, y=0.0, z=0.0))
             self.vel_pub.publish(v_msg)
             self.get_logger().info('Publishing: "%s"' % v_msg)
