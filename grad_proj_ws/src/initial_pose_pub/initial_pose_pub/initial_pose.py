@@ -11,17 +11,34 @@ class MinimalPublisher(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
+    # def timer_callback(self):
+    # 	self.i = self.i + 1 
+    # 	if self.i == 70:
+	#         initialpose_msg = PoseWithCovarianceStamped()
+    #         initialpose_msg.header.frame_id='map'
+    #         initialpose_msg.pose.pose.position.x=5.327165126800537
+    #         initialpose_msg.pose.pose.position.y=-8.965409278869629
+	#         initialpose_msg.pose.pose.orientation.w=1.0
+	#         self.initialpose_pub.publish(initialpose_msg)
+	#         self.get_logger().info('Publishing: "%s"' % initialpose_msg)  
+	#         self.destroy_node()
+
     def timer_callback(self):
-    	self.i = self.i + 1 
-    	if self.i == 150:
-	        initialpose_msg = PoseWithCovarianceStamped()
-	        initialpose_msg.header.frame_id='map'
-	        initialpose_msg.pose.pose.position.x=0.0
-	        initialpose_msg.pose.pose.position.y=0.0
-	        initialpose_msg.pose.pose.orientation.w=1.0
-	        self.initialpose_pub.publish(initialpose_msg)
-	        self.get_logger().info('Publishing: "%s"' % initialpose_msg)  
-	        self.destroy_node()
+        self.i = self.i+1
+        if self.i == 70:
+            initialpose_msg = PoseWithCovarianceStamped()
+            initialpose_msg.header.frame_id='map'
+            # initialpose_msg.pose.pose.position.x = 5.2078728675842285
+            # initialpose_msg.pose.pose.position.y = -7.894547462463379
+            initialpose_msg.pose.pose.position.x = 0.0
+            initialpose_msg.pose.pose.position.y = 0.0
+            initialpose_msg.pose.pose.orientation.x = 0.0
+            initialpose_msg.pose.pose.orientation.y=0.0
+            initialpose_msg.pose.pose.orientation.z=0.0
+            initialpose_msg.pose.pose.orientation.w = 1.0
+            self.initialpose_pub.publish(initialpose_msg)
+            self.get_logger().info('Publishing: "%s"' % initialpose_msg)
+            self.destroy_node()
 
 
 def main(args=None):

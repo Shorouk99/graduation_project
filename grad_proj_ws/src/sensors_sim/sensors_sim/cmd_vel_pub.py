@@ -15,16 +15,24 @@ class MinimalPublisher(Node):
         super().__init__('minimal_publisher')
         self.vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
         timer_period = 0.1  # seconds
+        self.i = 0
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
 
     def timer_callback(self):
 
         # publishing simulated cmd_vel data
-        v_msg = Twist(linear=Vector3(x=0.0, y=0.0, z=0.0), angular=Vector3(x=0.0, y=0.0, z=0.0))
-        self.vel_pub.publish(v_msg)
-        self.get_logger().info('Publishing: "%s"' % v_msg)
+        if self.i < 100:
+            v_msg = Twist(linear=Vector3(x=0.5, y=0.0, z=0.0), angular=Vector3(x=0.0, y=0.0, z=0.0))
+            self.vel_pub.publish(v_msg)
+            self.get_logger().info('Publishing: "%s"' % v_msg)
 
+        elif self.i > 100:
+            v_msg = Twist(linear=Vector3(x=0.0, y=0.0, z=0.0), angular=Vector3(x=0.0, y=0.0, z=0.0))
+            self.vel_pub.publish(v_msg)
+            self.get_logger().info('Publishing: "%s"' % v_msg)
+
+        self.i = self.i+1
 
 def main(args=None):
     rclpy.init(args=args)
