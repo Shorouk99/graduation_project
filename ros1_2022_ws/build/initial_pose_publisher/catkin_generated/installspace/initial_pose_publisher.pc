@@ -1,0 +1,8 @@
+prefix=/home/shorouk/graduation_project/ros1_2022_ws/install
+
+Name: initial_pose_publisher
+Description: Description of initial_pose_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+amcl:differential_drive:initial_pose_publisher:jetson_bot/localization_data_pub:jetson_bot/navstack_pub:mpu6050_serial_to_imu:rosserial_esp32:rplidar_ros:serial:simple_navigation_goals
+-DCATKIN_DEVEL_PREFIX=/home/shorouk/graduation_project/ros1_2022_ws/devel -DCMAKE_INSTALL_PREFIX=/home/shorouk/graduation_project/ros1_2022_ws/install -G Unix Makefiles

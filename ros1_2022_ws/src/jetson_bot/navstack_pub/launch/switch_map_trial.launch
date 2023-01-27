@@ -1,0 +1,16 @@
+
+<launch>
+
+	<!-- Map File -->
+  <arg name="map_file" default="$(find navstack_pub)/maps/elevator.yaml"/>
+	
+  <!-- Map Server -->
+  <!-- Publish: /map, /map_metadata -->
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)" />
+
+ <node pkg="zbar_ros" type="initial_pose.py" name="initial_pose">
+  </node>
+	
+
+
+</launch>
