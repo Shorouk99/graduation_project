@@ -4,7 +4,7 @@
 # https://automaticaddison.com
 
 # Modified by: Shorouk Magdy
-# Modifiaction date: December 1, 2022
+# Modifiaction date: October 6, 2022
  
 import os
 from launch import LaunchDescription
@@ -17,21 +17,20 @@ from launch_ros.substitutions import FindPackageShare
  
 def generate_launch_description():
  
-  # Set the path to different files and folders. 
+  # Set the path to different files and folders.
+  pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros')   
   pkg_share = FindPackageShare(package='physical_robot').find('physical_robot')
-
   default_launch_dir = os.path.join(pkg_share, 'launch')
-  default_model_path = os.path.join(pkg_share, 'models/urdf_description.urdf')
+  default_model_path = os.path.join(pkg_share, 'models/safia_sim.urdf')
   robot_localization_file_path = os.path.join(pkg_share, 'config/ekf.yaml') 
-  robot_name_in_urdf = 'donatello'
-  default_rviz_config_path = os.path.join(pkg_share, 'rviz/physical_config.rviz')
+  robot_name_in_urdf = 'safia_sim'
+  default_rviz_config_path = os.path.join(pkg_share, 'rviz/nav2_config.rviz')
   world_file_name = 'basic_mobile_bot_world/smalltown.world'
   world_path = os.path.join(pkg_share, 'worlds', world_file_name)
-
   nav2_dir = FindPackageShare(package='nav2_bringup').find('nav2_bringup') 
   nav2_launch_dir = os.path.join(nav2_dir, 'launch') 
-  static_map_path = os.path.join(pkg_share, 'maps', 'hospital_ws2.yaml')
-  nav2_params_path = os.path.join(pkg_share, 'params', 'nav2_params_original.yaml')
+  static_map_path = os.path.join(pkg_share, 'maps', 'new_main_map2.yaml')
+  nav2_params_path = os.path.join(pkg_share, 'params', 'original_params.yaml')
   nav2_bt_path = FindPackageShare(package='nav2_bt_navigator').find('nav2_bt_navigator')
   behavior_tree_xml_path = os.path.join(nav2_bt_path, 'behavior_trees', 'navigate_w_replanning_and_recovery.xml')
    
@@ -49,6 +48,8 @@ def generate_launch_description():
   use_robot_state_pub = LaunchConfiguration('use_robot_state_pub')
   use_rviz = LaunchConfiguration('use_rviz')
   use_sim_time = LaunchConfiguration('use_sim_time')
+  use_simulator = LaunchConfiguration('use_simulator')
+  world = LaunchConfiguration('world')
    
   # Map fully qualified names to relative ones so the node's namespace can be prepended.
   # In case of the transforms (tf), currently, there doesn't seem to be a better alternative
@@ -109,6 +110,11 @@ def generate_launch_description():
     name='slam',
     default_value='False',
     description='Whether to run SLAM')
+     
+  declare_use_robot_state_pub_cmd = DeclareLaunchArgument(
+    name='use_robot_state_pub',
+    default_value='True',
+    description='Whether to start the robot state publisher')
  
   declare_use_rviz_cmd = DeclareLaunchArgument(
     name='use_rviz',
@@ -119,9 +125,29 @@ def generate_launch_description():
     name='use_sim_time',
     default_value='False',
     description='Use simulation (Gazebo) clock if true')
-
+ 
+  declare_use_simulator_cmd = DeclareLaunchArgument(
+    name='use_simulator',
+    default_value='False',
+    description='Whether to start the simulator')
+ 
+  declare_world_cmd = DeclareLaunchArgument(
+    name='world',
+    default_value=world_path,
+    description='Full path to the world model file to load')
     
   # Specify the actions
+ 
+  # Start Gazebo server
+  start_gazebo_server_cmd = IncludeLaunchDescription(
+    PythonLaunchDescriptionSource(os.path.join(pkg_gazebo_ros, 'launch', 'gzserver.launch.py')),
+    condition=IfCondition(use_simulator),
+    launch_arguments={'world': world}.items())
+ 
+  # Start Gazebo client    
+  start_gazebo_client_cmd = IncludeLaunchDescription(
+    PythonLaunchDescriptionSource(os.path.join(pkg_gazebo_ros, 'launch', 'gzclient.launch.py')),
+    condition=IfCondition(PythonExpression([use_simulator, ' and not ', headless])))
  
   # Start robot localization using an Extended Kalman filter
   start_robot_localization_cmd = Node(
@@ -131,49 +157,18 @@ def generate_launch_description():
     output='screen',
     parameters=[robot_localization_file_path, 
     {'use_sim_time': use_sim_time}])
-
-  # Send initial pose after 15 seconds
-  start_initial_pose_cmd = Node (
-    package='initial_pose_pub',
-    executable='talker')
-
-  # Send fake sensors (encoder and/or imu and/or lidar) data
-  start_sensors_sim_cmd = Node (
-    package='sensors_sim',
-    executable='sensors_talker')  
  
-  # Broadcast footprint static transform
-  footprint_static_transform = Node (
-    package='tf2_ros',
-    executable='static_transform_publisher',
-    arguments= ['0', '0', '-0.175', '0', '0', '0', 'base_footprint', 'base_link'])
-
-  # Broadcast lidar static transform
-  lidar_static_transform = Node (
-    package='tf2_ros',
-    executable='static_transform_publisher',
-    arguments= ['0.045', '-0.145', '0.195', '1.56', '0', '0', 'base_link', 'lidar_link'])
-
-  # Broadcast IMU static transform
-  imu_static_transform = Node (
-    package='tf2_ros',
-    executable='static_transform_publisher',
-    arguments= ['0', '0', '-0.135', '0', '0', '0', 'base_link', 'imu_link'])
-
-  # Start lidar node
-  start_lidar_cmd = Node (
-    name='rplidar_composition',
-    package='rplidar_ros',
-    executable='rplidar_composition',
-    output='screen',
-    parameters=[{
-      'serial_port': '/dev/ttyUSB1',
-      'serial_baudrate': 115200,  # A1 / A2
-      'frame_id': 'lidar_link',
-      'inverted': False,
-      'angle_compensate': True,}],
-    )
-
+  # Subscribe to the joint states of the robot, and publish the 3D pose of each link.
+  start_robot_state_publisher_cmd = Node(
+    condition=IfCondition(use_robot_state_pub),
+    package='robot_state_publisher',
+    executable='robot_state_publisher',
+    namespace=namespace,
+    parameters=[{'use_sim_time': use_sim_time, 
+    'robot_description': Command(['xacro ', model])}],
+    remappings=remappings,
+    arguments=[default_model_path])
+ 
   # Launch RViz
   start_rviz_cmd = Node(
     condition=IfCondition(use_rviz),
@@ -194,6 +189,24 @@ def generate_launch_description():
                         'params_file': params_file,
                         'default_bt_xml_filename': default_bt_xml_filename,
                         'autostart': autostart}.items())
+
+  # # Start lidar node
+  # start_lidar_cmd = Node (
+  #   name='rplidar_composition',
+  #   package='rplidar_ros',
+  #   executable='rplidar_composition',
+  #   output='screen',
+  #   parameters=[{
+  #     'serial_port': '/dev/ttyUSB1',
+  #     'serial_baudrate': 115200,  # A1 / A2
+  #     'frame_id': 'lidar_link',
+  #     'inverted': False,
+  #     'angle_compensate': True,}],
+  #   )
+
+  start_initial_pose_cmd = Node (
+    package='initial_pose_pub',
+    executable='talker')      
  
   # Create the launch description and populate
   ld = LaunchDescription()
@@ -208,16 +221,19 @@ def generate_launch_description():
   ld.add_action(declare_params_file_cmd)
   ld.add_action(declare_rviz_config_file_cmd)
   ld.add_action(declare_simulator_cmd)
-  ld.add_action(declare_slam_cmd) 
+  ld.add_action(declare_slam_cmd)
+  ld.add_action(declare_use_robot_state_pub_cmd)  
   ld.add_action(declare_use_rviz_cmd) 
   ld.add_action(declare_use_sim_time_cmd)
+  ld.add_action(declare_use_simulator_cmd)
+  ld.add_action(declare_world_cmd)
  
   # Add any actions
+  # ld.add_action(start_gazebo_server_cmd)
+  # ld.add_action(start_gazebo_client_cmd)
   ld.add_action(start_robot_localization_cmd)
-  ld.add_action(footprint_static_transform)
-  ld.add_action(lidar_static_transform)
-  ld.add_action(imu_static_transform)
-  ld.add_action(start_lidar_cmd)
+  ld.add_action(start_robot_state_publisher_cmd)
+  # ld.add_action(start_lidar_cmd)
   ld.add_action(start_rviz_cmd)
   ld.add_action(start_initial_pose_cmd)
   ld.add_action(start_ros2_navigation_cmd)

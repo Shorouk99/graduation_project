@@ -27,14 +27,14 @@ def generate_launch_description():
   default_model_path = os.path.join(pkg_share, 'models/urdf_description.urdf')
   robot_localization_file_path = os.path.join(pkg_share, 'config/ekf.yaml') 
   robot_name_in_urdf = 'donatello'
-  default_rviz_config_path = os.path.join(pkg_share, 'rviz/physical_config.rviz')
+  default_rviz_config_path = os.path.join(pkg_share, 'rviz/nav2_config.rviz')
   world_file_name = 'basic_mobile_bot_world/smalltown.world'
   world_path = os.path.join(pkg_share, 'worlds', world_file_name)
 
   nav2_dir = FindPackageShare(package='nav2_bringup').find('nav2_bringup') 
   nav2_launch_dir = os.path.join(nav2_dir, 'launch') 
-  static_map_path = os.path.join(pkg_share, 'maps', 'new_main_map2.yaml')
-  nav2_params_path = os.path.join(pkg_share, 'params', 'nav2_params.yaml')
+  static_map_path = os.path.join(pkg_share, 'maps', 'hospital_ws2.yaml')
+  nav2_params_path = os.path.join(pkg_share, 'params', 'nav2_params_original.yaml')
   nav2_bt_path = FindPackageShare(package='nav2_bt_navigator').find('nav2_bt_navigator')
   behavior_tree_xml_path = os.path.join(nav2_bt_path, 'behavior_trees', 'navigate_w_replanning_and_recovery.xml')
    
@@ -117,7 +117,7 @@ def generate_launch_description():
      
   declare_use_robot_state_pub_cmd = DeclareLaunchArgument(
     name='use_robot_state_pub',
-    default_value='True',
+    default_value='False',
     description='Whether to start the robot state publisher')
  
   declare_use_rviz_cmd = DeclareLaunchArgument(
@@ -127,12 +127,12 @@ def generate_launch_description():
      
   declare_use_sim_time_cmd = DeclareLaunchArgument(
     name='use_sim_time',
-    default_value='True',
+    default_value='False',
     description='Use simulation (Gazebo) clock if true')
 
   declare_use_simulator_cmd = DeclareLaunchArgument(
     name='use_simulator',
-    default_value='True',
+    default_value='False',
     description='Whether to start the simulator')  
 
   declare_world_cmd = DeclareLaunchArgument(
