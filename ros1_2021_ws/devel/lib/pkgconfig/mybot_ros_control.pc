@@ -1,8 +1,0 @@
-prefix=/home/shorouk/graduation_project/ros1_2021_ws/devel
-
-Name: mybot_ros_control
-Description: Description of mybot_ros_control
-Version: 0.0.0
-Cflags: -I/home/shorouk/graduation_project/ros1_2021_ws/src/mybot_ros_control/include
-Libs: -L${prefix}/lib 
-Requires: 

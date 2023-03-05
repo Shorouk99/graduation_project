@@ -1,8 +1,0 @@
-prefix=/home/shorouk/graduation_project/ros1_2022_ws/devel
-
-Name: mpu6050_serial_to_imu
-Description: Description of mpu6050_serial_to_imu
-Version: 0.0.2
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp geometry_msgs sensor_msgs serial std_msgs std_srvs tf

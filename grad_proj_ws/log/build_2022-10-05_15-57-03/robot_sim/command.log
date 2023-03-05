@@ -1,6 +1,0 @@
-Invoking command in '/home/shorouk/grad_proj_ws/build/robot_sim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shorouk/grad_proj_ws/src/robot_sim -DCMAKE_INSTALL_PREFIX=/home/shorouk/grad_proj_ws/install/robot_sim
-Invoked command in '/home/shorouk/grad_proj_ws/build/robot_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shorouk/grad_proj_ws/src/robot_sim -DCMAKE_INSTALL_PREFIX=/home/shorouk/grad_proj_ws/install/robot_sim
-Invoking command in '/home/shorouk/grad_proj_ws/build/robot_sim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/grad_proj_ws/build/robot_sim -- -j4 -l4
-Invoked command in '/home/shorouk/grad_proj_ws/build/robot_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/grad_proj_ws/build/robot_sim -- -j4 -l4
-Invoking command in '/home/shorouk/grad_proj_ws/build/robot_sim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/grad_proj_ws/build/robot_sim
-Invoked command in '/home/shorouk/grad_proj_ws/build/robot_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/grad_proj_ws/build/robot_sim
