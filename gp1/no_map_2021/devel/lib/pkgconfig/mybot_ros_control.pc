@@ -1,0 +1,8 @@
+prefix=/home/shorouk/graduation_project/no_map_2021/devel
+
+Name: mybot_ros_control
+Description: Description of mybot_ros_control
+Version: 0.0.0
+Cflags: -I/home/shorouk/graduation_project/no_map_2021/src/mybot_ros_control/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,24 @@
+[1.418s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/src/sensors_sim': PYTHONPATH=/home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensors_sim build --build-base /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build install --prefix /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim --record /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/install.log --single-version-externally-managed
+[1.877s] running egg_info
+[1.879s] writing ../../build/sensors_sim/sensors_sim.egg-info/PKG-INFO
+[1.880s] writing dependency_links to ../../build/sensors_sim/sensors_sim.egg-info/dependency_links.txt
+[1.880s] writing entry points to ../../build/sensors_sim/sensors_sim.egg-info/entry_points.txt
+[1.881s] writing requirements to ../../build/sensors_sim/sensors_sim.egg-info/requires.txt
+[1.881s] writing top-level names to ../../build/sensors_sim/sensors_sim.egg-info/top_level.txt
+[1.961s] reading manifest file '../../build/sensors_sim/sensors_sim.egg-info/SOURCES.txt'
+[1.962s] writing manifest file '../../build/sensors_sim/sensors_sim.egg-info/SOURCES.txt'
+[1.963s] running build
+[1.963s] running build_py
+[1.963s] copying sensors_sim/sensors_pub.py -> /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build/lib/sensors_sim
+[1.964s] running install
+[1.965s] running install_lib
+[1.967s] copying /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build/lib/sensors_sim/sensors_pub.py -> /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim
+[1.968s] byte-compiling /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim/sensors_pub.py to sensors_pub.cpython-38.pyc
+[1.971s] running install_data
+[1.972s] running install_egg_info
+[1.975s] removing '/home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim-0.0.0-py3.8.egg-info' (and everything under it)
+[1.975s] Copying ../../build/sensors_sim/sensors_sim.egg-info to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim-0.0.0-py3.8.egg-info
+[1.977s] running install_scripts
+[2.008s] Installing talker script to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/sensors_sim
+[2.009s] writing list of installed files to '/home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/install.log'
+[2.051s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/src/sensors_sim' returned '0': PYTHONPATH=/home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensors_sim build --build-base /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build install --prefix /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim --record /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/install.log --single-version-externally-managed

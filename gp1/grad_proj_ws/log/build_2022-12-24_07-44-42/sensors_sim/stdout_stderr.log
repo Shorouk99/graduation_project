@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/sensors_sim/sensors_sim.egg-info/PKG-INFO
+writing dependency_links to ../../build/sensors_sim/sensors_sim.egg-info/dependency_links.txt
+writing entry points to ../../build/sensors_sim/sensors_sim.egg-info/entry_points.txt
+writing requirements to ../../build/sensors_sim/sensors_sim.egg-info/requires.txt
+writing top-level names to ../../build/sensors_sim/sensors_sim.egg-info/top_level.txt
+reading manifest file '../../build/sensors_sim/sensors_sim.egg-info/SOURCES.txt'
+writing manifest file '../../build/sensors_sim/sensors_sim.egg-info/SOURCES.txt'
+running build
+running build_py
+copying sensors_sim/quat_to_euler.py -> /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build/lib/sensors_sim
+running install
+running install_lib
+copying /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build/lib/sensors_sim/quat_to_euler.py -> /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim
+byte-compiling /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim/quat_to_euler.py to quat_to_euler.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/sensors_sim/sensors_sim.egg-info to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim-0.0.0-py3.8.egg-info
+running install_scripts
+Installing cmd_vel_talker script to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/sensors_sim
+Installing odom_pub script to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/sensors_sim
+Installing sensors_talker script to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/sensors_sim
+Installing ypr_pub script to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/sensors_sim
+writing list of installed files to '/home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/install.log'

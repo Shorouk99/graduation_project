@@ -1,0 +1,8 @@
+prefix=/home/shorouk/graduation_project/no_map_2021/devel
+
+Name: mybot_description
+Description: Description of mybot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

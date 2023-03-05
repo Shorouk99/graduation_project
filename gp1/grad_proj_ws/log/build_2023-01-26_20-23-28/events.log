@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.000707] (-) JobUnselected: {'identifier': 'initial_pose_pub'}
+[0.001142] (-) JobUnselected: {'identifier': 'physical_robot'}
+[0.001214] (-) JobUnselected: {'identifier': 'robot_sim'}
+[0.001283] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.001321] (-) JobUnselected: {'identifier': 'sensors_sim'}
+[0.001670] (-) EventReactorShutdown: {}

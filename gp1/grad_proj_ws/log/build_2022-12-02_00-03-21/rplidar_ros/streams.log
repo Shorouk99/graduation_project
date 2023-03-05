@@ -1,0 +1,332 @@
+[0.138s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros
+[2.016s] -- The C compiler identification is GNU 9.4.0
+[2.190s] -- The CXX compiler identification is GNU 9.4.0
+[2.254s] -- Check for working C compiler: /usr/bin/cc
+[2.377s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.406s] -- Detecting C compiler ABI info
+[2.583s] -- Detecting C compiler ABI info - done
+[2.607s] -- Detecting C compile features
+[2.620s] -- Detecting C compile features - done
+[2.625s] -- Check for working CXX compiler: /usr/bin/c++
+[2.782s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.784s] -- Detecting CXX compiler ABI info
+[2.945s] -- Detecting CXX compiler ABI info - done
+[2.969s] -- Detecting CXX compile features
+[2.970s] -- Detecting CXX compile features - done
+[3.008s] -- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[3.169s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.170s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.604s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.702s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[4.307s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.355s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.945s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.023s] -- Found FastRTPS: /opt/ros/foxy/include  
+[5.553s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.753s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[5.763s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.773s] -- Looking for pthread.h
+[5.910s] -- Looking for pthread.h - found
+[5.910s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.102s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.103s] -- Looking for pthread_create in pthreads
+[6.274s] -- Looking for pthread_create in pthreads - not found
+[6.274s] -- Looking for pthread_create in pthread
+[6.408s] -- Looking for pthread_create in pthread - found
+[6.410s] -- Found Threads: TRUE  
+[8.147s] -- Configuring done
+[8.179s] -- Generating done
+[8.182s] -- Build files have been written to: /home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros
+[8.197s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros
+[8.202s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros -- -j4 -l4
+[8.280s] [35m[1mScanning dependencies of target rplidar_composition_node[0m
+[9.690s] [ 11%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[9.690s] [ 33%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/src/rplidar_node.cpp.o[0m
+[9.690s] [ 22%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[9.693s] [ 44%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[10.733s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:36[m[K:
+[10.734s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:50:[m[K [01;35m[Kwarning: [m[K"M_PI" redefined
+[10.734s]    50 | #define M_PI 3.1415926535897932384626433832795
+[10.734s]       | 
+[10.735s] In file included from [01m[K/usr/include/c++/9/cmath:45[m[K,
+[10.735s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18[m[K,
+[10.735s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24[m[K,
+[10.736s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[10.736s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[10.736s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[10.736s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[10.737s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[10.737s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[10.737s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[10.738s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[10.738s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[10.738s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[10.738s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:34[m[K,
+[10.739s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:36[m[K:
+[10.739s] [01m[K/usr/include/math.h:1070:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[10.739s]  1070 | # define M_PI  3.14159265358979323846 /* pi */
+[10.739s]       | 
+[11.688s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39[m[K,
+[11.689s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:48[m[K,
+[11.689s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[11.689s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[11.690s]    59 |     _u8 data[[01;35m[K0[m[K];
+[11.690s]       |              [01;35m[K^[m[K
+[11.692s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40[m[K,
+[11.692s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:48[m[K,
+[11.693s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[11.693s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[11.693s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[11.694s]       |                  [01;35m[K^[m[K
+[11.707s] [ 55%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/hal/thread.cpp.o[0m
+[11.746s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)[m[K’:
+[11.747s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:438:17:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[11.748s]   438 |         if ([01;35m[Kans == (int)len[m[K) {
+[11.749s]       |             [01;35m[K~~~~^~~~~~~~~~~[m[K
+[11.762s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/arch_linux.h:42[m[K,
+[11.763s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:40[m[K,
+[11.763s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[11.764s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress&, const void*, size_t)[m[K’:
+[11.765s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:726:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[11.765s]   726 |             assert([01;35m[Kans == (int)len[m[K);
+[11.766s]       |                    [01;35m[K~~~~^~~~~~~~~~~[m[K
+[12.174s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)[m[K’:
+[12.175s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.175s]    97 | bool raw_serial::open(const char * portname, uint32_t baudrate, [01;35m[Kuint32_t flags[m[K)
+[12.176s]       |                                                                 [01;35m[K~~~~~~~~~^~~~~[m[K
+[12.180s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::flush(_u32)[m[K’:
+[12.181s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.181s]   281 | void raw_serial::flush( [01;35m[K_u32 flags[m[K)
+[12.182s]       |                         [01;35m[K~~~~~^~~~~[m[K
+[12.183s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)[m[K’:
+[12.183s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.184s]   286 | int raw_serial::waitforsent([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[12.184s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[12.185s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)[m[K’:
+[12.185s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.186s]   292 | int raw_serial::waitforrecv([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[12.186s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[12.513s] [ 66%] [32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/rplidar_driver.cpp.o[0m
+[12.843s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39[m[K,
+[12.844s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:48[m[K,
+[12.844s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/hal/thread.cpp:35[m[K:
+[12.845s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[12.845s]    59 |     _u8 data[[01;35m[K0[m[K];
+[12.846s]       |              [01;35m[K^[m[K
+[12.846s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40[m[K,
+[12.847s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:48[m[K,
+[12.847s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/hal/thread.cpp:35[m[K:
+[12.848s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[12.848s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[12.849s]       |                  [01;35m[K^[m[K
+[12.850s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/hal/thread.cpp:43[m[K:
+[12.851s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)[m[K’:
+[12.851s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:48:77:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K-Wcast-function-type[m[K]
+[12.852s]    48 |     pthread_create((pthread_t *)&newborn._handle, NULL, (void * (*)(void *))[01;35m[Kproc[m[K, data);
+[12.853s]       |                                                                             [01;35m[K^~~~[m[K
+[12.853s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::join(long unsigned int)[m[K’:
+[12.854s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:129:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.854s]   129 | u_result Thread::join([01;35m[Kunsigned long timeout[m[K)
+[12.855s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[13.580s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39[m[K,
+[13.580s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/sdkcommon.h:48[m[K,
+[13.581s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:35[m[K:
+[13.581s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[13.581s]    59 |     _u8 data[[01;35m[K0[m[K];
+[13.581s]       |              [01;35m[K^[m[K
+[13.582s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40[m[K,
+[13.582s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/sdkcommon.h:48[m[K,
+[13.582s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:35[m[K:
+[13.582s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[13.583s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[13.583s]       |                  [01;35m[K^[m[K
+[14.017s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::reset(_u32)[m[K’:
+[14.018s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:121:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.018s]   121 | u_result RPlidarDriverImplCommon::reset([01;35m[K_u32 timeout[m[K)
+[14.018s]       |                                         [01;35m[K~~~~~^~~~~~~[m[K
+[14.022s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::checkIfTofLidar(bool&, _u32)[m[K’:
+[14.022s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:275:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.022s]   275 | u_result RPlidarDriverImplCommon::checkIfTofLidar(bool & isTofLidar, [01;35m[K_u32 timeout[m[K)
+[14.022s]       |                                                                      [01;35m[K~~~~~^~~~~~~[m[K
+[14.035s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual int rp::standalone::rplidar::RPlidarDriverImplCommon::_getSyncBitByAngle(int, int)[m[K’:
+[14.035s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:671:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klast_angleInc_q16[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[14.035s]   671 |     static int [01;35m[Klast_angleInc_q16[m[K = 0;
+[14.036s]       |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[14.036s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:673:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsyncBit_check_threshold[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[14.036s]   673 |     int [01;35m[KsyncBit_check_threshold[m[K = (int)((5 << 16) / angleInc_q16) + 1;//find syncBit in 0~3 degree
+[14.036s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.039s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::_cacheUltraCapsuledScanData()[m[K’:
+[14.039s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:771:46:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_scan_count[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[14.040s]   771 |     size_t                                   [01;35m[Klast_scan_count[m[K = 0;
+[14.040s]       |                                              [01;35m[K^~~~~~~~~~~~~~~[m[K
+[14.042s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[14.042s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:850:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsyncBit_check_threshold[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[14.042s]   850 |             int [01;35m[KsyncBit_check_threshold[m[K = (int)((2 << 16) / angleInc_q16) + 1;//find syncBit in 0~1 degree
+[14.043s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.043s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_dense_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[14.044s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:903:108:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K-Wignored-qualifiers[m[K]
+[14.044s]   903 |             const int dist = static_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance[01;35m[K)[m[K;
+[14.044s]       |                                                                                                            [01;35m[K^[m[K
+[14.048s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In function ‘[01m[K_u32 rp::standalone::rplidar::_crc32cal(_u32, void*, _u16)[m[K’:
+[14.048s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1027:23:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K-[m[K’ in operand of ‘[01m[K&[m[K’ [[01;35m[K-Wparentheses[m[K]
+[14.048s]  1027 |     _u8 leftBytes = [01;35m[K4 - len[m[K & 0x3;
+[14.049s]       |                     [01;35m[K~~^~~~~[m[K
+[14.054s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_ultraCapsuleToNormal(const rplidar_response_ultra_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[14.054s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1238:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[14.055s]  1238 |             if (([01;35m[Kdist_predict1 == 0xFFFFFE00[m[K) || (dist_predict1 == 0x1FF)) {
+[14.055s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[14.055s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1246:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[14.055s]  1246 |             if (([01;35m[Kdist_predict2 == 0xFFFFFE00[m[K) || (dist_predict2 == 0x1FF)) {
+[14.055s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[14.056s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1256:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsyncBit_check_threshold[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[14.056s]  1256 |                 int [01;35m[KsyncBit_check_threshold[m[K = (int)((3 << 16) / angleInc_q16)+1;//find syncBit in 0~1 degree
+[14.056s]       |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.075s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<rp::standalone::rplidar::RplidarScanMode>&, _u32)[m[K’:
+[14.075s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1484:105:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.076s]  1484 | u_result RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<RplidarScanMode>& outModes, [01;35m[K_u32 timeoutInMs[m[K)
+[14.076s]       |                                                                                                    [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[14.078s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startScan(bool, bool, _u32, rp::standalone::rplidar::RplidarScanMode*)[m[K’:
+[14.079s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1581:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.079s]  1581 | u_result RPlidarDriverImplCommon::startScan(bool force, bool useTypicalScan, [01;35m[K_u32 options[m[K, RplidarScanMode* outUsedScanMode)
+[14.079s]       |                                                                              [01;35m[K~~~~~^~~~~~~[m[K
+[14.084s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::stop(_u32)[m[K’:
+[14.084s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1805:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.084s]  1805 | u_result RPlidarDriverImplCommon::stop([01;35m[K_u32 timeout[m[K)
+[14.084s]       |                                        [01;35m[K~~~~~^~~~~~~[m[K
+[14.096s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::setLidarSpinSpeed(_u16, _u32)[m[K’:
+[14.097s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:2193:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.097s]  2193 | u_result RPlidarDriverImplCommon::setLidarSpinSpeed(_u16 rpm, [01;35m[K_u32 timeout[m[K)
+[14.098s]       |                                                               [01;35m[K~~~~~^~~~~~~[m[K
+[14.100s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverSerial::connect(const char*, _u32, _u32)[m[K’:
+[14.100s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:2270:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.100s]  2270 | u_result RPlidarDriverSerial::connect(const char * port_path, _u32 baudrate, [01;35m[K_u32 flag[m[K)
+[14.100s]       |                                                                              [01;35m[K~~~~~^~~~[m[K
+[14.102s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverTCP::connect(const char*, _u32, _u32)[m[K’:
+[14.102s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:2312:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.102s]  2312 | u_result RPlidarDriverTCP::connect(const char * ipStr, _u32 port, [01;35m[K_u32 flag[m[K)
+[14.102s]       |                                                                   [01;35m[K~~~~~^~~~[m[K
+[14.434s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startMotor()[m[K’:
+[14.435s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:2225:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+[14.435s]  2225 | [01;35m[K}[m[K
+[14.435s]       | [01;35m[K^[m[K
+[14.974s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39[m[K,
+[14.974s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:41[m[K,
+[14.974s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:36[m[K:
+[14.975s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[14.975s]    59 |     _u8 data[[01;35m[K0[m[K];
+[14.975s]       |              [01;35m[K^[m[K
+[14.976s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40[m[K,
+[14.976s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:41[m[K,
+[14.976s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:36[m[K:
+[14.976s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[14.977s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[14.977s]       |                  [01;35m[K^[m[K
+[15.152s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid rplidar_ros::rplidar_node::stop_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)[m[K’:
+[15.153s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:243:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[15.153s]   243 | void rplidar_node::stop_motor([01;35m[Kconst EmptyRequest req[m[K, EmptyResponse res)
+[15.153s]       |                               [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[15.153s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:243:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[15.153s]   243 | void rplidar_node::stop_motor(const EmptyRequest req, [01;35m[KEmptyResponse res[m[K)
+[15.153s]       |                                                       [01;35m[K~~~~~~~~~~~~~~^~~[m[K
+[15.155s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid rplidar_ros::rplidar_node::start_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)[m[K’:
+[15.155s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:256:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[15.156s]   256 | void rplidar_node::start_motor([01;35m[Kconst EmptyRequest req[m[K, EmptyResponse res)
+[15.156s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[15.156s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:256:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[15.156s]   256 | void rplidar_node::start_motor(const EmptyRequest req, [01;35m[KEmptyResponse res[m[K)
+[15.157s]       |                                                        [01;35m[K~~~~~~~~~~~~~~^~~[m[K
+[15.171s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid rplidar_ros::rplidar_node::publish_loop()[m[K’:
+[15.171s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:372:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[15.171s]   372 |           for (j = 0; [01;35m[Kj < m_angle_compensate_multiple[m[K; j++) {
+[15.172s]       |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.173s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:393:44:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[15.173s]   393 |       for (size_t x = start_node, y = 0; [01;35m[Kx < end_node[m[K; ++x, ++y) {
+[15.173s]       |                                          [01;35m[K~~^~~~~~~~~~[m[K
+[15.173s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:400:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_min[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[15.174s]   400 |     float [01;35m[Kangle_min[m[K = deg_2_rad(0.0f);
+[15.174s]       |           [01;35m[K^~~~~~~~~[m[K
+[15.174s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:401:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_max[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[15.174s]   401 |     float [01;35m[Kangle_max[m[K = deg_2_rad(359.0f);
+[15.174s]       |           [01;35m[K^~~~~~~~~[m[K
+[19.932s] [ 77%] [32m[1mLinking CXX shared library librplidar_composition_node.so[0m
+[21.585s] [ 77%] Built target rplidar_composition_node
+[21.603s] [35m[1mScanning dependencies of target rplidar_composition[0m
+[21.689s] [ 88%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o[0m
+[21.912s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16[m[K:
+[21.912s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:50:[m[K [01;35m[Kwarning: [m[K"M_PI" redefined
+[21.912s]    50 | #define M_PI 3.1415926535897932384626433832795
+[21.913s]       | 
+[21.913s] In file included from [01m[K/usr/include/c++/9/cmath:45[m[K,
+[21.913s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18[m[K,
+[21.913s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24[m[K,
+[21.914s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[21.914s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[21.914s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[21.914s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[21.914s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[21.915s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[21.915s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[21.915s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[21.915s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[21.915s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[21.916s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:34[m[K,
+[21.916s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16[m[K:
+[21.916s] [01m[K/usr/include/math.h:1070:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[21.916s]  1070 | # define M_PI  3.14159265358979323846 /* pi */
+[21.917s]       | 
+[24.318s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39[m[K,
+[24.318s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:41[m[K,
+[24.318s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16[m[K:
+[24.319s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[24.319s]    59 |     _u8 data[[01;35m[K0[m[K];
+[24.319s]       |              [01;35m[K^[m[K
+[24.319s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40[m[K,
+[24.320s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:41[m[K,
+[24.320s]                  from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16[m[K:
+[24.320s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[24.320s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[24.320s]       |                  [01;35m[K^[m[K
+[25.055s] In file included from [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16[m[K:
+[25.055s] [01m[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:76:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kfloat rplidar_ros::getAngle(const rplidar_response_measurement_node_hq_t&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[25.055s]    76 | static float [01;35m[KgetAngle[m[K(const rplidar_response_measurement_node_hq_t & node)
+[25.055s]       |              [01;35m[K^~~~~~~~[m[K
+[25.280s] [100%] [32m[1mLinking CXX executable rplidar_composition[0m
+[25.565s] [100%] Built target rplidar_composition
+[25.595s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros -- -j4 -l4
+[25.679s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros
+[25.696s] -- Install configuration: ""
+[25.697s] -- Execute custom install script
+[25.699s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[25.718s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py
+[25.738s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py
+[25.756s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py
+[25.776s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py
+[25.796s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py
+[25.815s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py
+[25.833s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py
+[25.850s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py
+[25.868s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py
+[25.888s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz
+[25.905s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/lib/librplidar_composition_node.so
+[25.922s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/include/rplidar_node.hpp
+[25.939s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/include/visibility.h
+[25.956s] -- Up-to-date symlink: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[25.957s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[25.977s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[25.992s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[26.009s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[26.025s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[26.042s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[26.060s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[26.077s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[26.095s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[26.113s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[26.131s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/package.dsv
+[26.148s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[26.166s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/ament_index/resource_index/rclcpp_components/rplidar_ros
+[26.183s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.203s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.222s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[26.247s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[26.265s] -- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/package.xml
+[26.286s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros

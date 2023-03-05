@@ -1,0 +1,8 @@
+prefix=/home/shorouk/graduation_project/no_map_2021/devel
+
+Name: new_pid
+Description: Description of new_pid
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

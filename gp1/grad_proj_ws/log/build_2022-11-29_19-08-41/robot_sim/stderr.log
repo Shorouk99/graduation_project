@@ -1,0 +1,1 @@
+CMake Error: The current CMakeCache.txt directory /home/shorouk/graduation_project/grad_proj_ws/build/robot_sim/CMakeCache.txt is different than the directory /home/shorouk/grad_proj_ws/build/robot_sim where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt

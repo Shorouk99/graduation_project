@@ -1,0 +1,608 @@
+[0.000000] (-) TimerEvent: {}
+[0.000218] (-) JobUnselected: {'identifier': 'initial_pose_pub'}
+[0.000336] (-) JobUnselected: {'identifier': 'physical_robot'}
+[0.000414] (-) JobUnselected: {'identifier': 'robot_sim'}
+[0.000482] (-) JobUnselected: {'identifier': 'sensors_sim'}
+[0.000550] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.000619] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.098280] (-) TimerEvent: {}
+[0.136001] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.137183] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros'], 'cwd': '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'shorouk'), ('LC_TIME', 'en_GB.UTF-8'), ('SSH_AGENT_PID', '1286'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shorouk'), ('OLDPWD', '/home/shorouk/graduation_project/ros1_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1041'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shorouk'), ('JOURNAL_STREAM', '8:41063'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shorouk'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shorouk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/shorouk-TP500LA:@/tmp/.ICE-unix/1324,unix/shorouk-TP500LA:/tmp/.ICE-unix/1324'), ('INVOCATION_ID', '213a622a1deb4c859bba7895a0580254'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4aa36f7a_241a_4fd7_86be_9abe781ea633'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.198486] (-) TimerEvent: {}
+[0.299061] (-) TimerEvent: {}
+[0.399463] (-) TimerEvent: {}
+[0.499864] (-) TimerEvent: {}
+[0.600234] (-) TimerEvent: {}
+[0.700639] (-) TimerEvent: {}
+[0.800996] (-) TimerEvent: {}
+[0.901431] (-) TimerEvent: {}
+[1.001789] (-) TimerEvent: {}
+[1.102276] (-) TimerEvent: {}
+[1.202729] (-) TimerEvent: {}
+[1.303223] (-) TimerEvent: {}
+[1.403631] (-) TimerEvent: {}
+[1.503995] (-) TimerEvent: {}
+[1.604438] (-) TimerEvent: {}
+[1.704805] (-) TimerEvent: {}
+[1.805303] (-) TimerEvent: {}
+[1.905655] (-) TimerEvent: {}
+[2.006068] (-) TimerEvent: {}
+[2.016457] (rplidar_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[2.106198] (-) TimerEvent: {}
+[2.190442] (rplidar_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.206377] (-) TimerEvent: {}
+[2.254523] (rplidar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.306509] (-) TimerEvent: {}
+[2.377713] (rplidar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.406586] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.406882] (-) TimerEvent: {}
+[2.507203] (-) TimerEvent: {}
+[2.583158] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.607166] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.607482] (-) TimerEvent: {}
+[2.620305] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.625011] (rplidar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.707615] (-) TimerEvent: {}
+[2.782132] (rplidar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.784570] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.807755] (-) TimerEvent: {}
+[2.908220] (-) TimerEvent: {}
+[2.945357] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.969405] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.970425] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.008222] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.9 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[3.008593] (-) TimerEvent: {}
+[3.108901] (-) TimerEvent: {}
+[3.169483] (rplidar_ros) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.170000] (rplidar_ros) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.209030] (-) TimerEvent: {}
+[3.309478] (-) TimerEvent: {}
+[3.409870] (-) TimerEvent: {}
+[3.510292] (-) TimerEvent: {}
+[3.604063] (rplidar_ros) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.610418] (-) TimerEvent: {}
+[3.702382] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[3.710576] (-) TimerEvent: {}
+[3.810989] (-) TimerEvent: {}
+[3.911411] (-) TimerEvent: {}
+[4.011790] (-) TimerEvent: {}
+[4.112227] (-) TimerEvent: {}
+[4.212652] (-) TimerEvent: {}
+[4.307596] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.312778] (-) TimerEvent: {}
+[4.355762] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[4.412919] (-) TimerEvent: {}
+[4.513354] (-) TimerEvent: {}
+[4.613816] (-) TimerEvent: {}
+[4.719859] (-) TimerEvent: {}
+[4.820277] (-) TimerEvent: {}
+[4.920740] (-) TimerEvent: {}
+[4.945138] (rplidar_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[5.020867] (-) TimerEvent: {}
+[5.023557] (rplidar_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[5.120974] (-) TimerEvent: {}
+[5.221342] (-) TimerEvent: {}
+[5.321769] (-) TimerEvent: {}
+[5.422190] (-) TimerEvent: {}
+[5.522627] (-) TimerEvent: {}
+[5.553826] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.622760] (-) TimerEvent: {}
+[5.723214] (-) TimerEvent: {}
+[5.753593] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[5.762994] (rplidar_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.773592] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.823362] (-) TimerEvent: {}
+[5.910096] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.910639] (rplidar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.923478] (-) TimerEvent: {}
+[6.024182] (-) TimerEvent: {}
+[6.102684] (rplidar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[6.103186] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[6.124332] (-) TimerEvent: {}
+[6.224795] (-) TimerEvent: {}
+[6.274544] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[6.274975] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[6.324910] (-) TimerEvent: {}
+[6.408485] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[6.410601] (rplidar_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.425058] (-) TimerEvent: {}
+[6.525512] (-) TimerEvent: {}
+[6.625922] (-) TimerEvent: {}
+[6.726329] (-) TimerEvent: {}
+[6.826777] (-) TimerEvent: {}
+[6.927142] (-) TimerEvent: {}
+[7.027560] (-) TimerEvent: {}
+[7.128022] (-) TimerEvent: {}
+[7.228617] (-) TimerEvent: {}
+[7.329144] (-) TimerEvent: {}
+[7.429610] (-) TimerEvent: {}
+[7.530067] (-) TimerEvent: {}
+[7.630543] (-) TimerEvent: {}
+[7.730917] (-) TimerEvent: {}
+[7.831365] (-) TimerEvent: {}
+[7.931787] (-) TimerEvent: {}
+[8.032213] (-) TimerEvent: {}
+[8.132654] (-) TimerEvent: {}
+[8.147764] (rplidar_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.179016] (rplidar_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[8.182204] (rplidar_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros\n'}
+[8.197340] (rplidar_ros) CommandEnded: {'returncode': 0}
+[8.198766] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[8.200178] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros', '--', '-j4', '-l4'], 'cwd': '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'shorouk'), ('LC_TIME', 'en_GB.UTF-8'), ('SSH_AGENT_PID', '1286'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shorouk'), ('OLDPWD', '/home/shorouk/graduation_project/ros1_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1041'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shorouk'), ('JOURNAL_STREAM', '8:41063'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shorouk'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shorouk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/shorouk-TP500LA:@/tmp/.ICE-unix/1324,unix/shorouk-TP500LA:/tmp/.ICE-unix/1324'), ('INVOCATION_ID', '213a622a1deb4c859bba7895a0580254'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4aa36f7a_241a_4fd7_86be_9abe781ea633'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[8.232856] (-) TimerEvent: {}
+[8.280728] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidar_composition_node\x1b[0m\n'}
+[8.332949] (-) TimerEvent: {}
+[8.434979] (-) TimerEvent: {}
+[8.535364] (-) TimerEvent: {}
+[8.635795] (-) TimerEvent: {}
+[8.736181] (-) TimerEvent: {}
+[8.836566] (-) TimerEvent: {}
+[8.936961] (-) TimerEvent: {}
+[9.037331] (-) TimerEvent: {}
+[9.137709] (-) TimerEvent: {}
+[9.238083] (-) TimerEvent: {}
+[9.338434] (-) TimerEvent: {}
+[9.438810] (-) TimerEvent: {}
+[9.539175] (-) TimerEvent: {}
+[9.639551] (-) TimerEvent: {}
+[9.689962] (rplidar_ros) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/timer.cpp.o\x1b[0m\n'}
+[9.690503] (rplidar_ros) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/src/rplidar_node.cpp.o\x1b[0m\n'}
+[9.690900] (rplidar_ros) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/net_serial.cpp.o\x1b[0m\n'}
+[9.693521] (rplidar_ros) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/arch/linux/net_socket.cpp.o\x1b[0m\n'}
+[9.739672] (-) TimerEvent: {}
+[9.840042] (-) TimerEvent: {}
+[9.940501] (-) TimerEvent: {}
+[10.041170] (-) TimerEvent: {}
+[10.141619] (-) TimerEvent: {}
+[10.242008] (-) TimerEvent: {}
+[10.342432] (-) TimerEvent: {}
+[10.442851] (-) TimerEvent: {}
+[10.543286] (-) TimerEvent: {}
+[10.643741] (-) TimerEvent: {}
+[10.733345] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:36\x1b[m\x1b[K:\n'}
+[10.733917] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K"M_PI" redefined\n'}
+[10.734284] (rplidar_ros) StderrLine: {'line': b'   50 | #define M_PI 3.1415926535897932384626433832795\n'}
+[10.734775] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[10.735083] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/cmath:45\x1b[m\x1b[K,\n'}
+[10.735384] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[10.735672] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[10.735953] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[10.736234] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[10.736570] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[10.736852] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[10.737131] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[10.737419] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[10.737694] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[10.737980] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[10.738254] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.738524] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[10.738834] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:34\x1b[m\x1b[K,\n'}
+[10.739110] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:36\x1b[m\x1b[K:\n'}
+[10.739390] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/math.h:1070:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthis is the location of the previous definition\n'}
+[10.739669] (rplidar_ros) StderrLine: {'line': b' 1070 | # define M_PI  3.14159265358979323846 /* pi */\n'}
+[10.739938] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[10.744325] (-) TimerEvent: {}
+[10.845036] (-) TimerEvent: {}
+[10.945731] (-) TimerEvent: {}
+[11.046262] (-) TimerEvent: {}
+[11.146807] (-) TimerEvent: {}
+[11.247344] (-) TimerEvent: {}
+[11.347853] (-) TimerEvent: {}
+[11.448516] (-) TimerEvent: {}
+[11.549222] (-) TimerEvent: {}
+[11.650139] (-) TimerEvent: {}
+[11.688468] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[11.688975] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[11.689347] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[11.689711] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[11.690069] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.690408] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.692286] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[11.692714] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[11.693074] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[11.693437] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[11.693943] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.694320] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.706669] (rplidar_ros) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/hal/thread.cpp.o\x1b[0m\n'}
+[11.746333] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.747256] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:438:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[11.748015] (rplidar_ros) StderrLine: {'line': b'  438 |         if (\x1b[01;35m\x1b[Kans == (int)len\x1b[m\x1b[K) {\n'}
+[11.748724] (rplidar_ros) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.750236] (-) TimerEvent: {}
+[11.761731] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/arch_linux.h:42\x1b[m\x1b[K,\n'}
+[11.762761] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:40\x1b[m\x1b[K,\n'}
+[11.763471] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[11.764168] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress&, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.764893] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:726:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[11.765599] (rplidar_ros) StderrLine: {'line': b'  726 |             assert(\x1b[01;35m\x1b[Kans == (int)len\x1b[m\x1b[K);\n'}
+[11.766290] (rplidar_ros) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.850378] (-) TimerEvent: {}
+[11.951128] (-) TimerEvent: {}
+[12.051635] (-) TimerEvent: {}
+[12.152119] (-) TimerEvent: {}
+[12.174650] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.175240] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:97:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.175682] (rplidar_ros) StderrLine: {'line': b'   97 | bool raw_serial::open(const char * portname, uint32_t baudrate, \x1b[01;35m\x1b[Kuint32_t flags\x1b[m\x1b[K)\n'}
+[12.176112] (rplidar_ros) StderrLine: {'line': b'      |                                                                 \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.180446] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::flush(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.181005] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:281:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.181481] (rplidar_ros) StderrLine: {'line': b'  281 | void raw_serial::flush( \x1b[01;35m\x1b[K_u32 flags\x1b[m\x1b[K)\n'}
+[12.182053] (rplidar_ros) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.182918] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.183437] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:286:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.183959] (rplidar_ros) StderrLine: {'line': b'  286 | int raw_serial::waitforsent(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[12.184424] (rplidar_ros) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[12.185337] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.185831] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:292:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.186230] (rplidar_ros) StderrLine: {'line': b'  292 | int raw_serial::waitforrecv(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[12.186569] (rplidar_ros) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[12.252261] (-) TimerEvent: {}
+[12.352788] (-) TimerEvent: {}
+[12.453446] (-) TimerEvent: {}
+[12.513245] (rplidar_ros) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition_node.dir/sdk/src/rplidar_driver.cpp.o\x1b[0m\n'}
+[12.553584] (-) TimerEvent: {}
+[12.654256] (-) TimerEvent: {}
+[12.754758] (-) TimerEvent: {}
+[12.843612] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[12.844124] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[12.844504] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[12.844971] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[12.845525] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[12.846030] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.846515] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[12.847016] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[12.847533] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[12.848030] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[12.848568] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[12.849079] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[12.850467] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/hal/thread.cpp:43\x1b[m\x1b[K:\n'}
+[12.851103] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.851640] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:48:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcast between incompatible function types from \xe2\x80\x98\x1b[01m\x1b[Kthread_proc_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wcast-function-type\x1b[m\x1b[K]\n'}
+[12.852200] (rplidar_ros) StderrLine: {'line': b'   48 |     pthread_create((pthread_t *)&newborn._handle, NULL, (void * (*)(void *))\x1b[01;35m\x1b[Kproc\x1b[m\x1b[K, data);\n'}
+[12.852973] (rplidar_ros) StderrLine: {'line': b'      |                                                                             \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.853488] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::hal::Thread::join(long unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.854011] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:129:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.854516] (rplidar_ros) StderrLine: {'line': b'  129 | u_result Thread::join(\x1b[01;35m\x1b[Kunsigned long timeout\x1b[m\x1b[K)\n'}
+[12.855002] (-) TimerEvent: {}
+[12.855489] (rplidar_ros) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[12.955150] (-) TimerEvent: {}
+[13.055649] (-) TimerEvent: {}
+[13.156113] (-) TimerEvent: {}
+[13.256688] (-) TimerEvent: {}
+[13.357167] (-) TimerEvent: {}
+[13.457578] (-) TimerEvent: {}
+[13.558041] (-) TimerEvent: {}
+[13.580548] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[13.580891] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[13.581109] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:35\x1b[m\x1b[K:\n'}
+[13.581314] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[13.581537] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[13.581738] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[13.582157] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[13.582401] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/sdkcommon.h:48\x1b[m\x1b[K,\n'}
+[13.582608] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:35\x1b[m\x1b[K:\n'}
+[13.582808] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[13.583011] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[13.583210] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[13.658168] (-) TimerEvent: {}
+[13.758651] (-) TimerEvent: {}
+[13.859070] (-) TimerEvent: {}
+[13.959537] (-) TimerEvent: {}
+[14.017822] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::reset(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.018186] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:121:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[14.018411] (rplidar_ros) StderrLine: {'line': b'  121 | u_result RPlidarDriverImplCommon::reset(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[14.018617] (rplidar_ros) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[14.022251] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::checkIfTofLidar(bool&, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.022546] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:275:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[14.022764] (rplidar_ros) StderrLine: {'line': b'  275 | u_result RPlidarDriverImplCommon::checkIfTofLidar(bool & isTofLidar, \x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[14.022970] (rplidar_ros) StderrLine: {'line': b'      |                                                                      \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[14.035267] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::standalone::rplidar::RPlidarDriverImplCommon::_getSyncBitByAngle(int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.035634] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:671:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Klast_angleInc_q16\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[14.035878] (rplidar_ros) StderrLine: {'line': b'  671 |     static int \x1b[01;35m\x1b[Klast_angleInc_q16\x1b[m\x1b[K = 0;\n'}
+[14.036087] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.036322] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:673:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KsyncBit_check_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[14.036541] (rplidar_ros) StderrLine: {'line': b'  673 |     int \x1b[01;35m\x1b[KsyncBit_check_threshold\x1b[m\x1b[K = (int)((5 << 16) / angleInc_q16) + 1;//find syncBit in 0~3 degree\n'}
+[14.036746] (rplidar_ros) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.039545] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::_cacheUltraCapsuledScanData()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.039819] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:771:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klast_scan_count\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[14.040029] (rplidar_ros) StderrLine: {'line': b'  771 |     size_t                                   \x1b[01;35m\x1b[Klast_scan_count\x1b[m\x1b[K = 0;\n'}
+[14.040231] (rplidar_ros) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.042240] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.042509] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:850:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KsyncBit_check_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[14.042724] (rplidar_ros) StderrLine: {'line': b'  850 |             int \x1b[01;35m\x1b[KsyncBit_check_threshold\x1b[m\x1b[K = (int)((2 << 16) / angleInc_q16) + 1;//find syncBit in 0~1 degree\n'}
+[14.043163] (rplidar_ros) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.043798] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_dense_capsuleToNormal(const rplidar_response_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.044038] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:903:108:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on cast result type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[14.044297] (rplidar_ros) StderrLine: {'line': b'  903 |             const int dist = static_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[14.044511] (rplidar_ros) StderrLine: {'line': b'      |                                                                                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.048358] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[K_u32 rp::standalone::rplidar::_crc32cal(_u32, void*, _u16)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.048675] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1027:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K-\x1b[m\x1b[K\xe2\x80\x99 in operand of \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[14.048932] (rplidar_ros) StderrLine: {'line': b' 1027 |     _u8 leftBytes = \x1b[01;35m\x1b[K4 - len\x1b[m\x1b[K & 0x3;\n'}
+[14.049138] (rplidar_ros) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~\x1b[m\x1b[K\n'}
+[14.054373] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_ultraCapsuleToNormal(const rplidar_response_ultra_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.054811] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1238:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[14.055058] (rplidar_ros) StderrLine: {'line': b' 1238 |             if ((\x1b[01;35m\x1b[Kdist_predict1 == 0xFFFFFE00\x1b[m\x1b[K) || (dist_predict1 == 0x1FF)) {\n'}
+[14.055264] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.055464] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1246:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[14.055671] (rplidar_ros) StderrLine: {'line': b' 1246 |             if ((\x1b[01;35m\x1b[Kdist_predict2 == 0xFFFFFE00\x1b[m\x1b[K) || (dist_predict2 == 0x1FF)) {\n'}
+[14.055871] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.056243] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1256:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KsyncBit_check_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[14.056502] (rplidar_ros) StderrLine: {'line': b' 1256 |                 int \x1b[01;35m\x1b[KsyncBit_check_threshold\x1b[m\x1b[K = (int)((3 << 16) / angleInc_q16)+1;//find syncBit in 0~1 degree\n'}
+[14.056708] (rplidar_ros) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.059650] (-) TimerEvent: {}
+[14.075473] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<rp::standalone::rplidar::RplidarScanMode>&, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.075850] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1484:105:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[14.076082] (rplidar_ros) StderrLine: {'line': b' 1484 | u_result RPlidarDriverImplCommon::getAllSupportedScanModes(std::vector<RplidarScanMode>& outModes, \x1b[01;35m\x1b[K_u32 timeoutInMs\x1b[m\x1b[K)\n'}
+[14.076355] (rplidar_ros) StderrLine: {'line': b'      |                                                                                                    \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.078864] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startScan(bool, bool, _u32, rp::standalone::rplidar::RplidarScanMode*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.079158] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1581:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Koptions\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[14.079377] (rplidar_ros) StderrLine: {'line': b' 1581 | u_result RPlidarDriverImplCommon::startScan(bool force, bool useTypicalScan, \x1b[01;35m\x1b[K_u32 options\x1b[m\x1b[K, RplidarScanMode* outUsedScanMode)\n'}
+[14.079585] (rplidar_ros) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[14.084213] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::stop(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.084550] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:1805:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[14.084768] (rplidar_ros) StderrLine: {'line': b' 1805 | u_result RPlidarDriverImplCommon::stop(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[14.084970] (rplidar_ros) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[14.096648] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::setLidarSpinSpeed(_u16, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.097096] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:2193:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[14.097393] (rplidar_ros) StderrLine: {'line': b' 2193 | u_result RPlidarDriverImplCommon::setLidarSpinSpeed(_u16 rpm, \x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[14.097963] (rplidar_ros) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[14.100070] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverSerial::connect(const char*, _u32, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.100494] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:2270:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[14.100719] (rplidar_ros) StderrLine: {'line': b' 2270 | u_result RPlidarDriverSerial::connect(const char * port_path, _u32 baudrate, \x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K)\n'}
+[14.100925] (rplidar_ros) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[14.102169] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverTCP::connect(const char*, _u32, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.102423] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:2312:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[14.102630] (rplidar_ros) StderrLine: {'line': b' 2312 | u_result RPlidarDriverTCP::connect(const char * ipStr, _u32 port, \x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K)\n'}
+[14.102846] (rplidar_ros) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[14.159832] (-) TimerEvent: {}
+[14.260320] (-) TimerEvent: {}
+[14.360759] (-) TimerEvent: {}
+[14.434574] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::standalone::rplidar::RPlidarDriverImplCommon::startMotor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.435062] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:2225:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[14.435404] (rplidar_ros) StderrLine: {'line': b' 2225 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[14.435716] (rplidar_ros) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.460895] (-) TimerEvent: {}
+[14.561339] (-) TimerEvent: {}
+[14.661768] (-) TimerEvent: {}
+[14.762190] (-) TimerEvent: {}
+[14.862642] (-) TimerEvent: {}
+[14.963163] (-) TimerEvent: {}
+[14.973985] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[14.974412] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:41\x1b[m\x1b[K,\n'}
+[14.974699] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:36\x1b[m\x1b[K:\n'}
+[14.974967] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[14.975449] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[14.975723] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[14.976007] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[14.976331] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:41\x1b[m\x1b[K,\n'}
+[14.976643] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:36\x1b[m\x1b[K:\n'}
+[14.976918] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[14.977189] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[14.977455] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[15.063298] (-) TimerEvent: {}
+[15.152869] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid rplidar_ros::rplidar_node::stop_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.153160] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:243:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[15.153328] (rplidar_ros) StderrLine: {'line': b'  243 | void rplidar_node::stop_motor(\x1b[01;35m\x1b[Kconst EmptyRequest req\x1b[m\x1b[K, EmptyResponse res)\n'}
+[15.153470] (rplidar_ros) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[15.153601] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:243:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[15.153749] (rplidar_ros) StderrLine: {'line': b'  243 | void rplidar_node::stop_motor(const EmptyRequest req, \x1b[01;35m\x1b[KEmptyResponse res\x1b[m\x1b[K)\n'}
+[15.153881] (rplidar_ros) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[15.155560] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid rplidar_ros::rplidar_node::start_motor({anonymous}::EmptyRequest, {anonymous}::EmptyResponse)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.155872] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:256:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[15.156120] (rplidar_ros) StderrLine: {'line': b'  256 | void rplidar_node::start_motor(\x1b[01;35m\x1b[Kconst EmptyRequest req\x1b[m\x1b[K, EmptyResponse res)\n'}
+[15.156377] (rplidar_ros) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[15.156650] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:256:70:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[15.156912] (rplidar_ros) StderrLine: {'line': b'  256 | void rplidar_node::start_motor(const EmptyRequest req, \x1b[01;35m\x1b[KEmptyResponse res\x1b[m\x1b[K)\n'}
+[15.157143] (rplidar_ros) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[15.163400] (-) TimerEvent: {}
+[15.171275] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid rplidar_ros::rplidar_node::publish_loop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.171626] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:372:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[15.171880] (rplidar_ros) StderrLine: {'line': b'  372 |           for (j = 0; \x1b[01;35m\x1b[Kj < m_angle_compensate_multiple\x1b[m\x1b[K; j++) {\n'}
+[15.172103] (rplidar_ros) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.173104] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:393:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[15.173357] (rplidar_ros) StderrLine: {'line': b'  393 |       for (size_t x = start_node, y = 0; \x1b[01;35m\x1b[Kx < end_node\x1b[m\x1b[K; ++x, ++y) {\n'}
+[15.173679] (rplidar_ros) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.173880] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:400:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_min\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[15.174075] (rplidar_ros) StderrLine: {'line': b'  400 |     float \x1b[01;35m\x1b[Kangle_min\x1b[m\x1b[K = deg_2_rad(0.0f);\n'}
+[15.174210] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.174353] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/rplidar_node.cpp:401:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_max\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[15.174484] (rplidar_ros) StderrLine: {'line': b'  401 |     float \x1b[01;35m\x1b[Kangle_max\x1b[m\x1b[K = deg_2_rad(359.0f);\n'}
+[15.174608] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.263577] (-) TimerEvent: {}
+[15.364188] (-) TimerEvent: {}
+[15.464841] (-) TimerEvent: {}
+[15.565457] (-) TimerEvent: {}
+[15.665888] (-) TimerEvent: {}
+[15.766326] (-) TimerEvent: {}
+[15.866712] (-) TimerEvent: {}
+[15.967082] (-) TimerEvent: {}
+[16.067533] (-) TimerEvent: {}
+[16.167916] (-) TimerEvent: {}
+[16.268352] (-) TimerEvent: {}
+[16.368728] (-) TimerEvent: {}
+[16.469217] (-) TimerEvent: {}
+[16.569601] (-) TimerEvent: {}
+[16.669975] (-) TimerEvent: {}
+[16.770422] (-) TimerEvent: {}
+[16.870899] (-) TimerEvent: {}
+[16.971368] (-) TimerEvent: {}
+[17.071766] (-) TimerEvent: {}
+[17.172184] (-) TimerEvent: {}
+[17.272596] (-) TimerEvent: {}
+[17.373047] (-) TimerEvent: {}
+[17.473488] (-) TimerEvent: {}
+[17.573981] (-) TimerEvent: {}
+[17.674436] (-) TimerEvent: {}
+[17.774943] (-) TimerEvent: {}
+[17.875452] (-) TimerEvent: {}
+[17.975892] (-) TimerEvent: {}
+[18.076340] (-) TimerEvent: {}
+[18.176764] (-) TimerEvent: {}
+[18.277186] (-) TimerEvent: {}
+[18.377629] (-) TimerEvent: {}
+[18.478034] (-) TimerEvent: {}
+[18.578477] (-) TimerEvent: {}
+[18.678910] (-) TimerEvent: {}
+[18.779371] (-) TimerEvent: {}
+[18.879888] (-) TimerEvent: {}
+[18.980424] (-) TimerEvent: {}
+[19.080943] (-) TimerEvent: {}
+[19.181384] (-) TimerEvent: {}
+[19.281853] (-) TimerEvent: {}
+[19.382239] (-) TimerEvent: {}
+[19.482705] (-) TimerEvent: {}
+[19.583108] (-) TimerEvent: {}
+[19.683599] (-) TimerEvent: {}
+[19.783973] (-) TimerEvent: {}
+[19.884447] (-) TimerEvent: {}
+[19.932027] (rplidar_ros) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library librplidar_composition_node.so\x1b[0m\n'}
+[19.984583] (-) TimerEvent: {}
+[20.085183] (-) TimerEvent: {}
+[20.185583] (-) TimerEvent: {}
+[20.285957] (-) TimerEvent: {}
+[20.386371] (-) TimerEvent: {}
+[20.486799] (-) TimerEvent: {}
+[20.587254] (-) TimerEvent: {}
+[20.687660] (-) TimerEvent: {}
+[20.788101] (-) TimerEvent: {}
+[20.908719] (-) TimerEvent: {}
+[21.009137] (-) TimerEvent: {}
+[21.109589] (-) TimerEvent: {}
+[21.209959] (-) TimerEvent: {}
+[21.310414] (-) TimerEvent: {}
+[21.410810] (-) TimerEvent: {}
+[21.511321] (-) TimerEvent: {}
+[21.585288] (rplidar_ros) StdoutLine: {'line': b'[ 77%] Built target rplidar_composition_node\n'}
+[21.603623] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rplidar_composition\x1b[0m\n'}
+[21.611456] (-) TimerEvent: {}
+[21.689453] (rplidar_ros) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/standalone_rplidar.cpp.o\x1b[0m\n'}
+[21.711585] (-) TimerEvent: {}
+[21.812012] (-) TimerEvent: {}
+[21.911984] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[21.912449] (-) TimerEvent: {}
+[21.912664] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K"M_PI" redefined\n'}
+[21.912976] (rplidar_ros) StderrLine: {'line': b'   50 | #define M_PI 3.1415926535897932384626433832795\n'}
+[21.913219] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[21.913438] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/cmath:45\x1b[m\x1b[K,\n'}
+[21.913664] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[21.913871] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[21.914094] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[21.914298] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[21.914499] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[21.914698] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[21.914907] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[21.915178] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[21.915381] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[21.915591] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[21.915794] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[21.915993] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[21.916189] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:34\x1b[m\x1b[K,\n'}
+[21.916507] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[21.916737] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/math.h:1070:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthis is the location of the previous definition\n'}
+[21.916961] (rplidar_ros) StderrLine: {'line': b' 1070 | # define M_PI  3.14159265358979323846 /* pi */\n'}
+[21.917185] (rplidar_ros) StderrLine: {'line': b'      | \n'}
+[22.012606] (-) TimerEvent: {}
+[22.113136] (-) TimerEvent: {}
+[22.213540] (-) TimerEvent: {}
+[22.313938] (-) TimerEvent: {}
+[22.414440] (-) TimerEvent: {}
+[22.514830] (-) TimerEvent: {}
+[22.615278] (-) TimerEvent: {}
+[22.715659] (-) TimerEvent: {}
+[22.816148] (-) TimerEvent: {}
+[22.916546] (-) TimerEvent: {}
+[23.017014] (-) TimerEvent: {}
+[23.117395] (-) TimerEvent: {}
+[23.217762] (-) TimerEvent: {}
+[23.318201] (-) TimerEvent: {}
+[23.418613] (-) TimerEvent: {}
+[23.519044] (-) TimerEvent: {}
+[23.619414] (-) TimerEvent: {}
+[23.719860] (-) TimerEvent: {}
+[23.820225] (-) TimerEvent: {}
+[23.920674] (-) TimerEvent: {}
+[24.021034] (-) TimerEvent: {}
+[24.121465] (-) TimerEvent: {}
+[24.221834] (-) TimerEvent: {}
+[24.318596] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[24.318864] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:41\x1b[m\x1b[K,\n'}
+[24.319002] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[24.319127] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[24.319252] (rplidar_ros) StderrLine: {'line': b'   59 |     _u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[24.319371] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[24.319898] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[24.320086] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:41\x1b[m\x1b[K,\n'}
+[24.320221] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[24.320492] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:260:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[24.320671] (rplidar_ros) StderrLine: {'line': b'  260 |     _u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[24.320799] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[24.321930] (-) TimerEvent: {}
+[24.422247] (-) TimerEvent: {}
+[24.522846] (-) TimerEvent: {}
+[24.623249] (-) TimerEvent: {}
+[24.723681] (-) TimerEvent: {}
+[24.824112] (-) TimerEvent: {}
+[24.924629] (-) TimerEvent: {}
+[25.025050] (-) TimerEvent: {}
+[25.054985] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/src/standalone_rplidar.cpp:16\x1b[m\x1b[K:\n'}
+[25.055311] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shorouk/graduation_project/grad_proj_ws/src/rplidar_ros-ros2/include/rplidar_node.hpp:76:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfloat rplidar_ros::getAngle(const rplidar_response_measurement_node_hq_t&)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[25.055511] (rplidar_ros) StderrLine: {'line': b'   76 | static float \x1b[01;35m\x1b[KgetAngle\x1b[m\x1b[K(const rplidar_response_measurement_node_hq_t & node)\n'}
+[25.055681] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[25.125180] (-) TimerEvent: {}
+[25.225569] (-) TimerEvent: {}
+[25.280147] (rplidar_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable rplidar_composition\x1b[0m\n'}
+[25.325701] (-) TimerEvent: {}
+[25.426161] (-) TimerEvent: {}
+[25.526641] (-) TimerEvent: {}
+[25.565374] (rplidar_ros) StdoutLine: {'line': b'[100%] Built target rplidar_composition\n'}
+[25.594732] (rplidar_ros) CommandEnded: {'returncode': 0}
+[25.626796] (-) TimerEvent: {}
+[25.651587] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'install'}
+[25.677427] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros'], 'cwd': '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'shorouk'), ('LC_TIME', 'en_GB.UTF-8'), ('SSH_AGENT_PID', '1286'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/shorouk'), ('OLDPWD', '/home/shorouk/graduation_project/ros1_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('MANAGERPID', '1041'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'shorouk'), ('JOURNAL_STREAM', '8:41063'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shorouk'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/shorouk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/shorouk-TP500LA:@/tmp/.ICE-unix/1324,unix/shorouk-TP500LA:/tmp/.ICE-unix/1324'), ('INVOCATION_ID', '213a622a1deb4c859bba7895a0580254'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4aa36f7a_241a_4fd7_86be_9abe781ea633'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shorouk/graduation_project/grad_proj_ws/build/rplidar_ros'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[25.696226] (rplidar_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.697740] (rplidar_ros) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[25.699126] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[25.718012] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py\n'}
+[25.726945] (-) TimerEvent: {}
+[25.737997] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py\n'}
+[25.756689] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py\n'}
+[25.776763] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py\n'}
+[25.796729] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py\n'}
+[25.815590] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py\n'}
+[25.827066] (-) TimerEvent: {}
+[25.833270] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py\n'}
+[25.850280] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py\n'}
+[25.868200] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py\n'}
+[25.888493] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz\n'}
+[25.905738] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/lib/librplidar_composition_node.so\n'}
+[25.922669] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/include/rplidar_node.hpp\n'}
+[25.927146] (-) TimerEvent: {}
+[25.938807] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/include/visibility.h\n'}
+[25.956647] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[25.957331] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros\n'}
+[25.976844] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros\n'}
+[25.992351] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh\n'}
+[26.008859] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv\n'}
+[26.025611] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/environment/path.sh\n'}
+[26.027242] (-) TimerEvent: {}
+[26.042643] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/environment/path.dsv\n'}
+[26.060294] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/local_setup.bash\n'}
+[26.077847] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/local_setup.sh\n'}
+[26.095084] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/local_setup.zsh\n'}
+[26.113738] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/local_setup.dsv\n'}
+[26.127385] (-) TimerEvent: {}
+[26.131841] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/package.dsv\n'}
+[26.148392] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros\n'}
+[26.166388] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/ament_index/resource_index/rclcpp_components/rplidar_ros\n'}
+[26.183434] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[26.203087] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[26.221878] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake\n'}
+[26.227528] (-) TimerEvent: {}
+[26.247607] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake\n'}
+[26.265177] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /home/shorouk/graduation_project/grad_proj_ws/install/rplidar_ros/share/rplidar_ros/package.xml\n'}
+[26.284880] (rplidar_ros) CommandEnded: {'returncode': 0}
+[26.327654] (-) TimerEvent: {}
+[26.428363] (-) TimerEvent: {}
+[26.531038] (-) TimerEvent: {}
+[26.560280] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 0}
+[26.562627] (-) EventReactorShutdown: {}

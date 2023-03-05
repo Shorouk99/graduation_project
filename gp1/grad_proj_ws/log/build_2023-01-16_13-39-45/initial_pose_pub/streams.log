@@ -1,0 +1,24 @@
+[3.158s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/src/initial_pose_pub': PYTHONPATH=/home/shorouk/graduation_project/grad_proj_ws/install/initial_pose_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/initial_pose_pub build --build-base /home/shorouk/graduation_project/grad_proj_ws/build/initial_pose_pub/build install --prefix /home/shorouk/graduation_project/grad_proj_ws/install/initial_pose_pub --record /home/shorouk/graduation_project/grad_proj_ws/build/initial_pose_pub/install.log --single-version-externally-managed
+[3.577s] running egg_info
+[3.578s] writing ../../build/initial_pose_pub/initial_pose_pub.egg-info/PKG-INFO
+[3.579s] writing dependency_links to ../../build/initial_pose_pub/initial_pose_pub.egg-info/dependency_links.txt
+[3.579s] writing entry points to ../../build/initial_pose_pub/initial_pose_pub.egg-info/entry_points.txt
+[3.580s] writing requirements to ../../build/initial_pose_pub/initial_pose_pub.egg-info/requires.txt
+[3.580s] writing top-level names to ../../build/initial_pose_pub/initial_pose_pub.egg-info/top_level.txt
+[3.731s] reading manifest file '../../build/initial_pose_pub/initial_pose_pub.egg-info/SOURCES.txt'
+[3.756s] writing manifest file '../../build/initial_pose_pub/initial_pose_pub.egg-info/SOURCES.txt'
+[3.756s] running build
+[3.756s] running build_py
+[3.756s] copying initial_pose_pub/initial_pose.py -> /home/shorouk/graduation_project/grad_proj_ws/build/initial_pose_pub/build/lib/initial_pose_pub
+[3.765s] running install
+[3.766s] running install_lib
+[3.768s] copying /home/shorouk/graduation_project/grad_proj_ws/build/initial_pose_pub/build/lib/initial_pose_pub/initial_pose.py -> /home/shorouk/graduation_project/grad_proj_ws/install/initial_pose_pub/lib/python3.8/site-packages/initial_pose_pub
+[3.769s] byte-compiling /home/shorouk/graduation_project/grad_proj_ws/install/initial_pose_pub/lib/python3.8/site-packages/initial_pose_pub/initial_pose.py to initial_pose.cpython-38.pyc
+[3.772s] running install_data
+[3.773s] running install_egg_info
+[3.776s] removing '/home/shorouk/graduation_project/grad_proj_ws/install/initial_pose_pub/lib/python3.8/site-packages/initial_pose_pub-0.0.0-py3.8.egg-info' (and everything under it)
+[3.792s] Copying ../../build/initial_pose_pub/initial_pose_pub.egg-info to /home/shorouk/graduation_project/grad_proj_ws/install/initial_pose_pub/lib/python3.8/site-packages/initial_pose_pub-0.0.0-py3.8.egg-info
+[3.816s] running install_scripts
+[3.846s] Installing talker script to /home/shorouk/graduation_project/grad_proj_ws/install/initial_pose_pub/lib/initial_pose_pub
+[3.847s] writing list of installed files to '/home/shorouk/graduation_project/grad_proj_ws/build/initial_pose_pub/install.log'
+[3.899s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/src/initial_pose_pub' returned '0': PYTHONPATH=/home/shorouk/graduation_project/grad_proj_ws/install/initial_pose_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/initial_pose_pub build --build-base /home/shorouk/graduation_project/grad_proj_ws/build/initial_pose_pub/build install --prefix /home/shorouk/graduation_project/grad_proj_ws/install/initial_pose_pub --record /home/shorouk/graduation_project/grad_proj_ws/build/initial_pose_pub/install.log --single-version-externally-managed

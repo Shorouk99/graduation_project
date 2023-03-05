@@ -1,0 +1,74 @@
+[0.136s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shorouk/graduation_project/grad_proj_ws/src/physical_robot -DCMAKE_INSTALL_PREFIX=/home/shorouk/graduation_project/grad_proj_ws/install/physical_robot
+[2.027s] -- The C compiler identification is GNU 9.4.0
+[3.143s] -- The CXX compiler identification is GNU 9.4.0
+[3.262s] -- Check for working C compiler: /usr/bin/cc
+[3.558s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.560s] -- Detecting C compiler ABI info
+[3.746s] -- Detecting C compiler ABI info - done
+[3.770s] -- Detecting C compile features
+[3.783s] -- Detecting C compile features - done
+[3.816s] -- Check for working CXX compiler: /usr/bin/c++
+[3.965s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.967s] -- Detecting CXX compiler ABI info
+[4.119s] -- Detecting CXX compiler ABI info - done
+[4.145s] -- Detecting CXX compile features
+[4.146s] -- Detecting CXX compile features - done
+[4.240s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.336s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.336s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.968s] -- Configuring done
+[4.972s] -- Generating done
+[4.974s] -- Build files have been written to: /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot
+[4.982s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shorouk/graduation_project/grad_proj_ws/src/physical_robot -DCMAKE_INSTALL_PREFIX=/home/shorouk/graduation_project/grad_proj_ws/install/physical_robot
+[4.987s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot -- -j4 -l4
+[5.060s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot -- -j4 -l4
+[5.121s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot
+[5.138s] -- Install configuration: ""
+[5.138s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/config
+[5.138s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/config/ekf.yaml
+[5.139s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/launch
+[5.139s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/launch/rviz_and_gazebo_display.launch.py
+[5.139s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/launch/rviz_display.launch.py
+[5.139s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/launch/navigation_sim.launch.py
+[5.139s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps
+[5.140s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/mymap2.yaml
+[5.140s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/hospital_try3.pgm
+[5.146s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/hospital_try3.yaml
+[5.146s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/smalltown_world.yaml
+[5.147s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/smalltown_world.pgm
+[5.153s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/hospital_try2.yaml
+[5.153s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/mymap.pgm
+[5.154s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/mymap2.pgm
+[5.154s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/hospital_try2.pgm
+[5.161s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/mymap.yaml
+[5.161s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/meshes
+[5.162s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models
+[5.162s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models/urdf_description.urdf
+[5.163s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models/gazebo_files
+[5.163s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models/gazebo_files/model.config
+[5.164s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models/gazebo_files/model.sdf
+[5.164s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/params
+[5.165s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/params/nav2_params.yaml
+[5.165s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/rviz
+[5.165s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/rviz/nav2_config.rviz
+[5.165s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/rviz/urdf_config.rviz
+[5.166s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/src
+[5.166s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/worlds
+[5.166s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/worlds/basic_mobile_bot_world
+[5.166s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/worlds/basic_mobile_bot_world/smalltown.world
+[5.166s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/ament_index/resource_index/package_run_dependencies/physical_robot
+[5.166s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/ament_index/resource_index/parent_prefix_path/physical_robot
+[5.167s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/environment/ament_prefix_path.sh
+[5.167s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/environment/ament_prefix_path.dsv
+[5.167s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/environment/path.sh
+[5.167s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/environment/path.dsv
+[5.168s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/local_setup.bash
+[5.168s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/local_setup.sh
+[5.168s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/local_setup.zsh
+[5.168s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/local_setup.dsv
+[5.169s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/package.dsv
+[5.169s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/ament_index/resource_index/packages/physical_robot
+[5.169s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/cmake/physical_robotConfig.cmake
+[5.170s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/cmake/physical_robotConfig-version.cmake
+[5.170s] -- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/package.xml
+[5.174s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot

@@ -1,0 +1,8 @@
+prefix=/home/shorouk/graduation_project/ros1_2022_ws/install
+
+Name: differential_drive
+Description: Description of differential_drive
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

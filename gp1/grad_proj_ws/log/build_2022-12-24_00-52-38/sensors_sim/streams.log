@@ -1,0 +1,27 @@
+[3.679s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/src/sensors_sim': PYTHONPATH=/home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensors_sim build --build-base /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build install --prefix /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim --record /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/install.log --single-version-externally-managed
+[4.145s] running egg_info
+[4.146s] writing ../../build/sensors_sim/sensors_sim.egg-info/PKG-INFO
+[5.597s] writing dependency_links to ../../build/sensors_sim/sensors_sim.egg-info/dependency_links.txt
+[5.597s] writing entry points to ../../build/sensors_sim/sensors_sim.egg-info/entry_points.txt
+[5.598s] writing requirements to ../../build/sensors_sim/sensors_sim.egg-info/requires.txt
+[5.598s] writing top-level names to ../../build/sensors_sim/sensors_sim.egg-info/top_level.txt
+[5.728s] reading manifest file '../../build/sensors_sim/sensors_sim.egg-info/SOURCES.txt'
+[5.746s] writing manifest file '../../build/sensors_sim/sensors_sim.egg-info/SOURCES.txt'
+[5.746s] running build
+[5.746s] running build_py
+[5.747s] copying sensors_sim/odom.py -> /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build/lib/sensors_sim
+[5.756s] running install
+[5.757s] running install_lib
+[5.759s] copying /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build/lib/sensors_sim/odom.py -> /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim
+[5.761s] byte-compiling /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim/odom.py to odom.cpython-38.pyc
+[5.763s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (odom.py, line 32)
+[5.763s] running install_data
+[5.764s] running install_egg_info
+[5.767s] removing '/home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim-0.0.0-py3.8.egg-info' (and everything under it)
+[5.793s] Copying ../../build/sensors_sim/sensors_sim.egg-info to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim-0.0.0-py3.8.egg-info
+[5.808s] running install_scripts
+[5.844s] Installing cmd_vel_talker script to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/sensors_sim
+[5.845s] Installing odom_pub script to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/sensors_sim
+[5.845s] Installing sensors_talker script to /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/sensors_sim
+[5.845s] writing list of installed files to '/home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/install.log'
+[5.891s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/src/sensors_sim' returned '0': PYTHONPATH=/home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sensors_sim build --build-base /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/build install --prefix /home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim --record /home/shorouk/graduation_project/grad_proj_ws/build/sensors_sim/install.log --single-version-externally-managed

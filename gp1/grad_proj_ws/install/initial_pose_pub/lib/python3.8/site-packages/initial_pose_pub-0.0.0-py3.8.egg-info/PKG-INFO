@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: initial-pose-pub
+Version: 0.0.0
+Summary: Publish initial pose after 15 seconds from launching
+Home-page: UNKNOWN
+Maintainer: Shorouk Magdy
+Maintainer-email: shorouk.magdy.anwar@gmail.com
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN

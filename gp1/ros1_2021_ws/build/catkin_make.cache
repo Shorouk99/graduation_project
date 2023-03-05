@@ -1,0 +1,2 @@
+amcl:bring_up:differential-drive:mpu6050_serial_to_imu:mybot_description:mybot_ros_control:navigation:new_pid:rplidar_ros
+-DCATKIN_DEVEL_PREFIX=/home/shorouk/graduation_project/ros1_2021_ws/devel -DCMAKE_INSTALL_PREFIX=/home/shorouk/graduation_project/ros1_2021_ws/install -G Unix Makefiles

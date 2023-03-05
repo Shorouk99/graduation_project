@@ -1,0 +1,61 @@
+[0.125s] Invoking command in '/home/shorouk/grad_proj_ws/build/robot_sim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shorouk/grad_proj_ws/src/robot_sim -DCMAKE_INSTALL_PREFIX=/home/shorouk/grad_proj_ws/install/robot_sim
+[2.877s] -- The C compiler identification is GNU 9.4.0
+[4.072s] -- The CXX compiler identification is GNU 9.4.0
+[4.172s] -- Check for working C compiler: /usr/bin/cc
+[4.351s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.365s] -- Detecting C compiler ABI info
+[4.539s] -- Detecting C compiler ABI info - done
+[4.563s] -- Detecting C compile features
+[4.573s] -- Detecting C compile features - done
+[4.613s] -- Check for working CXX compiler: /usr/bin/c++
+[4.768s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.769s] -- Detecting CXX compiler ABI info
+[4.917s] -- Detecting CXX compiler ABI info - done
+[4.942s] -- Detecting CXX compile features
+[4.943s] -- Detecting CXX compile features - done
+[5.031s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[5.125s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[5.125s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.700s] -- Configuring done
+[5.703s] -- Generating done
+[5.705s] -- Build files have been written to: /home/shorouk/grad_proj_ws/build/robot_sim
+[5.710s] Invoked command in '/home/shorouk/grad_proj_ws/build/robot_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/shorouk/grad_proj_ws/src/robot_sim -DCMAKE_INSTALL_PREFIX=/home/shorouk/grad_proj_ws/install/robot_sim
+[5.714s] Invoking command in '/home/shorouk/grad_proj_ws/build/robot_sim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/grad_proj_ws/build/robot_sim -- -j4 -l4
+[5.787s] Invoked command in '/home/shorouk/grad_proj_ws/build/robot_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/grad_proj_ws/build/robot_sim -- -j4 -l4
+[5.833s] Invoking command in '/home/shorouk/grad_proj_ws/build/robot_sim': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/grad_proj_ws/build/robot_sim
+[5.850s] -- Install configuration: ""
+[5.850s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/config
+[5.850s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/config/ekf.yaml
+[5.865s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch
+[5.866s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch/rviz_and_gazebo_display.launch.py
+[5.866s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch/rviz_display.launch.py
+[5.866s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps
+[5.867s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/meshes
+[5.867s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models
+[5.867s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/urdf_description.urdf
+[5.867s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/gazebo_files
+[5.873s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/gazebo_files/model.config
+[5.884s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/gazebo_files/model.sdf
+[5.890s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/params
+[5.890s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/rviz
+[5.890s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/rviz/urdf_config.rviz
+[5.899s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/src
+[5.899s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/worlds
+[5.899s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/worlds/basic_mobile_bot_world
+[5.911s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/worlds/basic_mobile_bot_world/smalltown.world
+[5.929s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/ament_index/resource_index/package_run_dependencies/robot_sim
+[5.930s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/ament_index/resource_index/parent_prefix_path/robot_sim
+[5.930s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/ament_prefix_path.sh
+[5.931s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/ament_prefix_path.dsv
+[5.931s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/path.sh
+[5.931s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/path.dsv
+[5.932s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.bash
+[5.932s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.sh
+[5.932s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.zsh
+[5.933s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.dsv
+[5.933s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/package.dsv
+[5.934s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/ament_index/resource_index/packages/robot_sim
+[5.934s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/cmake/robot_simConfig.cmake
+[5.934s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/cmake/robot_simConfig-version.cmake
+[5.935s] -- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/package.xml
+[5.942s] Invoked command in '/home/shorouk/grad_proj_ws/build/robot_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/grad_proj_ws/build/robot_sim

@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.000226] (-) JobUnselected: {'identifier': 'physical_robot'}
+[0.000421] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.000575] (-) JobUnselected: {'identifier': 'robot_sim'}
+[0.000738] (-) JobUnselected: {'identifier': 'ros1_bridge'}
+[0.000826] (-) JobUnselected: {'identifier': 'sensors_sim'}
+[0.000891] (-) EventReactorShutdown: {}

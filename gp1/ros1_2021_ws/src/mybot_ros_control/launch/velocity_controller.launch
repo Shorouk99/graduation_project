@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+   
+	<param name="robot_description" command="$(find xacro)/xacro --inorder '$(find mybot_description)/urdf/donatello_hardware.xacro'" /> 
+	<!--<arg name="rvizconfig" default="$(find lino_description)/config/lino.rviz"/>-->
+  
+  <node name="hardware_interface_node" pkg="mybot_ros_control" type="MyRobot_hardware_interface_node" output="screen"/>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find mybot_description)/rviz/model.rviz"/>
+
+  <!-- Run the EKF Localization node -->
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization" clear_params="true">
+      <rosparam command="load" file="$(find mybot_ros_control)/config/localization.yaml"/>
+  </node>
+
+	<!-- Load controller configuration -->
+  <rosparam file="$(find mybot_ros_control)/config/controllers.yaml" command="load"/>
+
+  <!-- Spawn controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+        args="joints_update mobile_base_controller"/>
+</launch>

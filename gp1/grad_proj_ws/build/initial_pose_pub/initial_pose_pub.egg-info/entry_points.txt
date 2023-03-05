@@ -1,0 +1,3 @@
+[console_scripts]
+talker = initial_pose_pub.initial_pose:main
+

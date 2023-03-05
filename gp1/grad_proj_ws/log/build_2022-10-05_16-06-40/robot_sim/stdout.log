@@ -1,0 +1,40 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/shorouk/grad_proj_ws/build/robot_sim
+-- Install configuration: ""
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/config
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/config/ekf.yaml
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch/rviz_and_gazebo_display.launch.py
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch/rviz_display.launch.py
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/meshes
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/urdf_description.urdf
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/gazebo_files
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/gazebo_files/model.config
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/gazebo_files/model.sdf
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/params
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/rviz
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/rviz/urdf_config.rviz
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/src
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/worlds
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/worlds/basic_mobile_bot_world
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/worlds/basic_mobile_bot_world/smalltown.world
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/ament_index/resource_index/package_run_dependencies/robot_sim
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/ament_index/resource_index/parent_prefix_path/robot_sim
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/ament_prefix_path.sh
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/path.sh
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/path.dsv
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.bash
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.sh
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.zsh
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.dsv
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/package.dsv
+-- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/ament_index/resource_index/packages/robot_sim
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/cmake/robot_simConfig.cmake
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/cmake/robot_simConfig-version.cmake
+-- Installing: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/package.xml

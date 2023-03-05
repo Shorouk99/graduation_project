@@ -1,0 +1,68 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot
+-- Install configuration: ""
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/config
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/config/ekf.yaml
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/launch
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/launch/rviz_and_gazebo_display.launch.py
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/launch/rviz_display.launch.py
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/launch/navigation_sim.launch.py
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/mymap2.yaml
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/hospital_try3.pgm
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/hospital_try3.yaml
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/smalltown_world.yaml
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/smalltown_world.pgm
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/hospital_try2.yaml
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/mymap.pgm
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/mymap2.pgm
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/hospital_try2.pgm
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/maps/mymap.yaml
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/meshes
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models/urdf_description.urdf
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models/gazebo_files
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models/gazebo_files/model.config
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/models/gazebo_files/model.sdf
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/params
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/params/nav2_params.yaml
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/rviz
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/rviz/nav2_config.rviz
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/rviz/urdf_config.rviz
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/src
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/worlds
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/worlds/basic_mobile_bot_world
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/worlds/basic_mobile_bot_world/smalltown.world
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/ament_index/resource_index/package_run_dependencies/physical_robot
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/ament_index/resource_index/parent_prefix_path/physical_robot
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/environment/ament_prefix_path.sh
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/environment/ament_prefix_path.dsv
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/environment/path.sh
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/environment/path.dsv
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/local_setup.bash
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/local_setup.sh
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/local_setup.zsh
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/local_setup.dsv
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/package.dsv
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/ament_index/resource_index/packages/physical_robot
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/cmake/physical_robotConfig.cmake
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/cmake/physical_robotConfig-version.cmake
+-- Installing: /home/shorouk/graduation_project/grad_proj_ws/install/physical_robot/share/physical_robot/package.xml

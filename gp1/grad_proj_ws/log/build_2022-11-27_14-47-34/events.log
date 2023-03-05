@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000438] (-) JobUnselected: {'identifier': 'physical_robot'}
+[0.000560] (-) JobUnselected: {'identifier': 'robot_sim'}
+[0.000851] (-) JobUnselected: {'identifier': 'sensors_sim'}
+[0.001803] (-) EventReactorShutdown: {}

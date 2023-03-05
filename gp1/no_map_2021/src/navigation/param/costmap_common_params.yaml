@@ -1,0 +1,18 @@
+# Customized for Donatello
+max_obstacle_height: 0.60  # assume something like an arm is mounted on top of the robot
+obstacle_range: 2.0
+raytrace_range: 6
+
+#robot_radius : 0.25
+footprint: [[0.21,0.18], [-0.21,0.18], [-0.21,-0.18], [0.21,-0.18]]
+
+#layer definitions
+# static:
+#     map_topic: /map
+
+obstacles:
+    observation_sources: scan
+    scan: {data_type: LaserScan, topic: scan, marking: true, clearing: true}
+
+inflation:
+    inflation_radius: 0.20

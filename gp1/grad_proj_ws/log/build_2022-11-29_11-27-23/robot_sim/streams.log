@@ -1,0 +1,53 @@
+[0.588s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/robot_sim': /usr/bin/cmake --build /home/shorouk/graduation_project/grad_proj_ws/build/robot_sim -- -j4 -l4
+[0.986s] CMake Error: The current CMakeCache.txt directory /home/shorouk/graduation_project/grad_proj_ws/build/robot_sim/CMakeCache.txt is different than the directory /home/shorouk/grad_proj_ws/build/robot_sim where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[1.176s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/robot_sim' returned '0': /usr/bin/cmake --build /home/shorouk/graduation_project/grad_proj_ws/build/robot_sim -- -j4 -l4
+[1.249s] Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/robot_sim': /usr/bin/cmake --install /home/shorouk/graduation_project/grad_proj_ws/build/robot_sim
+[1.285s] -- Install configuration: ""
+[1.423s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/config
+[1.465s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/config/ekf.yaml
+[1.466s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch
+[1.496s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch/rviz_and_gazebo_display.launch.py
+[1.497s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch/rviz_display.launch.py
+[1.497s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/launch/navigation_sim.launch.py
+[1.498s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps
+[1.505s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/mymap2.yaml
+[1.505s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/hospital_try3.pgm
+[1.505s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/hospital_try3.yaml
+[1.506s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/smalltown_world.yaml
+[1.506s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/smalltown_world.pgm
+[1.506s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/hospital_try2.yaml
+[1.506s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/mymap.pgm
+[1.507s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/mymap2.pgm
+[1.507s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/hospital_try2.pgm
+[1.507s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/maps/mymap.yaml
+[1.507s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/meshes
+[1.528s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models
+[1.556s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/urdf_description.urdf
+[1.556s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/gazebo_files
+[1.573s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/gazebo_files/model.config
+[1.573s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/models/gazebo_files/model.sdf
+[1.573s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/params
+[1.595s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/params/nav2_params.yaml
+[1.595s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/rviz
+[1.656s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/rviz/nav2_config.rviz
+[1.656s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/rviz/urdf_config.rviz
+[1.656s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/src
+[1.682s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/worlds
+[1.745s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/worlds/basic_mobile_bot_world
+[1.756s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/worlds/basic_mobile_bot_world/smalltown.world
+[1.770s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/ament_index/resource_index/package_run_dependencies/robot_sim
+[1.800s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/ament_index/resource_index/parent_prefix_path/robot_sim
+[1.808s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/ament_prefix_path.sh
+[1.811s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/ament_prefix_path.dsv
+[1.813s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/path.sh
+[1.815s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/environment/path.dsv
+[1.815s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.bash
+[1.815s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.sh
+[1.815s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.zsh
+[1.815s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/local_setup.dsv
+[1.815s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/package.dsv
+[1.829s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/ament_index/resource_index/packages/robot_sim
+[1.888s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/cmake/robot_simConfig.cmake
+[1.889s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/cmake/robot_simConfig-version.cmake
+[1.889s] -- Up-to-date: /home/shorouk/grad_proj_ws/install/robot_sim/share/robot_sim/package.xml
+[2.395s] Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/robot_sim' returned '0': /usr/bin/cmake --install /home/shorouk/graduation_project/grad_proj_ws/build/robot_sim

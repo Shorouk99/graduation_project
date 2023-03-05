@@ -1,0 +1,4 @@
+Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot -- -j4 -l4
+Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot -- -j4 -l4
+Invoking command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot
+Invoked command in '/home/shorouk/graduation_project/grad_proj_ws/build/physical_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/shorouk/graduation_project/grad_proj_ws/build/physical_robot

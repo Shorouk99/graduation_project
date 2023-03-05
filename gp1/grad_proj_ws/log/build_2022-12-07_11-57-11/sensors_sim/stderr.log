@@ -1,0 +1,5 @@
+  File "/home/shorouk/graduation_project/grad_proj_ws/install/sensors_sim/lib/python3.8/site-packages/sensors_sim/cmd_vel_pub.py", line 30
+    else if self.i > 50:
+         ^
+SyntaxError: invalid syntax
+
