@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="intro_title">
+        <item>Multi-Agent Service Robot</item>
+        <item>bla bla</item>
+        <item>Customization</item>
+        <item>Monitoring</item>
+        <item>Controlling</item>
+        <item>SSH</item>
+    </string-array>
+
+    <string-array name="intro_descr">
+        <item>OUR Project is amazing!! </item>
+        <item>it has Lidar</item>
+        <item>HEY! LOOK!</item>
+        <item>Monitoring of your robotic system, for example by displaying an occupancy grid map.</item>
+        <item>Controlling of your robotic system, for example using teleoperational control via the joystick node.</item>
+        <item>Directly accessing the robot system via the embedded SSH terminal.</item>
+    </string-array>
+
+    <integer-array name="intro_img">
+        <item>@drawable/robot3d</item>
+        <item>@drawable/lidar</item>
+        <item>@drawable/intro_details</item>
+        <item>@drawable/intro_map</item>
+        <item>@drawable/intro_joystick</item>
+        <item>@drawable/intro_ssh</item>
+    </integer-array>
+</resources>
